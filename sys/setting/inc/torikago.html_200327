@@ -1,0 +1,99 @@
+<div id="torikagoContainer">
+
+
+  <table id="torikago" cellpadding="0" cellspacing="0">
+  	<tbody>
+     	<tr>
+    	  <td class="nolink floor blank">15F</td>
+    	  <td class="nolink blank" colspan="1"></td>
+          <td class="edit" id="himeji_1502" colspan="3"></td>
+          <td class="edit" id="himeji_1503" colspan="2"></td>
+     	</tr>
+        <tr>
+    	  <td class="nolink floor blank">14F</td>
+    	  <td class="edit" id="himeji_1401" colspan="2"></td>
+          <td class="edit" id="himeji_1402" colspan="2"></td>
+          <td class="edit" id="himeji_1403" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">13F</td>
+    	  <td class="edit" id="himeji_1301" colspan="2"></td>
+          <td class="edit" id="himeji_1302" colspan="2"></td>
+          <td class="edit" id="himeji_1303" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">12F</td>
+    	  <td class="edit" id="himeji_1201" colspan="2"></td>
+          <td class="edit" id="himeji_1202" colspan="2"></td>
+          <td class="edit" id="himeji_1203" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">11F</td>
+    	  <td class="edit" id="himeji_1101" colspan="2"></td>
+          <td class="edit" id="himeji_1102" colspan="2"></td>
+          <td class="edit" id="himeji_1103" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">10F</td>
+    	  <td class="edit" id="himeji_1001" colspan="2"></td>
+          <td class="edit" id="himeji_1002" colspan="2"></td>
+          <td class="edit" id="himeji_1003" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">9F</td>
+    	  <td class="edit" id="himeji_901" colspan="2"></td>
+          <td class="edit" id="himeji_902" colspan="2"></td>
+          <td class="edit" id="himeji_903" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">8F</td>
+    	  <td class="edit" id="himeji_801" colspan="2"></td>
+          <td class="edit" id="himeji_802" colspan="2"></td>
+          <td class="edit" id="himeji_803" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">7F</td>
+    	  <td class="edit" id="himeji_701" colspan="2"></td>
+          <td class="edit" id="himeji_702" colspan="2"></td>
+          <td class="edit" id="himeji_703" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">6F</td>
+    	  <td class="edit" id="himeji_601" colspan="2"></td>
+          <td class="edit" id="himeji_602" colspan="2"></td>
+          <td class="edit" id="himeji_603" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">5F</td>
+    	  <td class="edit" id="himeji_501" colspan="2"></td>
+          <td class="edit" id="himeji_502" colspan="2"></td>
+          <td class="edit" id="himeji_503" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">4F</td>
+    	  <td class="edit" id="himeji_401" colspan="2"></td>
+          <td class="edit" id="himeji_402" colspan="2"></td>
+          <td class="edit" id="himeji_403" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">3F</td>
+    	  <td class="edit" id="himeji_301" colspan="2"></td>
+          <td class="edit" id="himeji_302" colspan="2"></td>
+          <td class="edit" id="himeji_303" colspan="2"></td>
+     	</tr>
+		<tr>
+    	  <td class="nolink floor blank">2F</td>
+    	  <td class="edit" id="himeji_201" colspan="2"></td>
+          <td class="edit" id="himeji_202" colspan="2"></td>
+          <td class="edit" id="himeji_203" colspan="2"></td>
+     	</tr>
+    	<tr>
+    	  <td class="nolink floor blank" colspan="1">1F</td>
+    	  <td class="nolink public" colspan="2"><span>エントランスホール</span></td>
+    	  <td class="edit" id="otsu_102" colspan="2"></td>
+          <td class="edit" id="otsu_103" colspan="2"></td>    
+  	  </tr>
+	 </tbody>
+	</table>
+	<p class="captionBottom">※掲載の価格は予定販売価格（税込/100万円単位）となります。今後変更の可能性がございます。予めご了承の程、よろしくお願いいたします。</p>
+</div>
