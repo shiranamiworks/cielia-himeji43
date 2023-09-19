@@ -1,0 +1,774 @@
+@charset "utf-8";
+// ===================================================================
+// 限定コンテンツ シエリア姫路城 東  ライフスタイル
+// ===================================================================
+@import "_utility";
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+	//margin-bottom: 2em;
+	background:url(../images/member/column_lifestyle/bg_ttl_sp.png) no-repeat;
+	background-size:cover;
+	background-position: center bottom;
+	@include breakpoint-lg {
+		background:url(../images/member/column_lifestyle/bg_ttl.png) no-repeat;
+		background-position: center bottom;
+		background-size:cover;
+	}
+
+	h2 {
+		position: relative;
+		top: auto;
+		left: auto;
+		text-align: left;
+	}
+	.page-ttl {
+		height: 500px;
+		@include breakpoint-xl {
+			height: 710px;
+		}
+		&__innerBlock {
+			position: absolute;
+			top: 20px;
+			right: 10px;
+			width: 90%;
+			max-width: 520px;
+			padding: 15px;
+			background: rgba(20, 46, 119, 0.85);
+			color: $color_white;
+			@include breakpoint-lg {
+				width: 50%;
+				top:50px;
+				right: 20px;
+			}
+			@include breakpoint-xl {
+				top: 150px;
+				right: auto;
+				left: 70%;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);/*位置調整*/
+				padding: 40px;
+			}
+			&__subTitle {
+				margin-bottom: 1em;
+				//width: 10em;
+				color: #a69266;
+				border-bottom: 1px solid #a69266;
+				@include breakpoint-xl {
+					font-size: 2rem;
+				}
+			}
+			&__title {
+				margin-bottom: 1em;
+				font-size: 1.8rem;
+				font-weight: 500;
+				@include breakpoint-xl {
+					font-size: 3.3rem;
+					line-height: 1.5em;
+				}
+			}
+			&__read {
+				font-size: 1.4rem;
+				line-height: 1.5em;
+				@include breakpoint-xl {
+					font-size: 1.8rem;
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+}
+
+
+#lifestyle {
+	.alignfull {
+		width: 100vw !important;
+		margin-left: calc( 50% - 50vw );
+		margin-right: calc( 50% - 50vw );
+		max-width: none;
+	}
+
+	.alignfull_sp {
+		@media screen and (max-width:1103px) {
+			padding: 0;
+			width: 100vw !important;
+			margin-left: calc( 50% - 50vw );
+			margin-right: calc( 50% - 50vw );
+			max-width: none;
+		}
+	}
+
+	.alignwide {
+		@include breakpoint-xl {
+			width: 1200px !important;
+			margin-left: calc( 50% - 1200px / 2 ) !important;
+		}
+	}
+}
+
+
+
+
+#lifestyle {
+	font-size: 1.6rem;
+	.inbl{
+		display:inline-block;
+	}
+	figure {
+		position: relative;
+		figcaption {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 .3em;
+			color: #FFF;
+			background: rgba(80, 80, 80, 0.75);
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#lifestyle .sectionWrap {
+	padding-bottom: 4em;
+	@include breakpoint-xl {
+		padding: 0 80px 94px 80px;
+	}
+}
+
+
+#lifestyle .BackToMapBT {
+	margin: 2em 0 0 auto;
+	@include breakpoint-lg {
+		margin: 5em 0 0 auto;
+	}
+	p {
+		text-align: right;
+		a {
+			position: relative;
+			padding: .6em 3em;
+			color: #FFF;
+			background: $color_primary01;
+			opacity: 1;
+			transition: .5s ease-out;
+			@include breakpoint-lg {
+				padding: 1em 5em;
+			}
+			&::before {
+				content:"";
+				position: absolute;
+				top:50%;
+				right:5px;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				display:block;
+				width: 8px;
+				height: 8px;
+				background:url(../images/member/column_lifestyle/icon_arrow01.png) no-repeat;	
+				background-size:100% auto;
+			}
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+}
+
+#lifestyle .bgColorGreen {
+	background: #f0f4f0;
+}
+
+#lifestyle .bgColorPink {
+	background: #f3ecf3;
+}
+
+
+#lifestyle .sectionInformation {
+	margin-top: 4em;
+	padding: 1em;
+	border: 3px solid #a2b6bd;
+	.sectionInformation__inner {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+	}
+	.sectionInformation__photoBlock {
+		@include breakpoint-lg {
+			width: 30%;
+		}
+	}
+	.sectionInformation__textBlock {
+		color: $color_primary01;
+		font-size: 1.8rem;
+		@include breakpoint-lg {
+			width: 67%;
+		}
+		span {
+			font-size: 1.3rem;
+			color: #737373;
+		}
+	}
+	.sectionInformation__textBlock__list {
+		margin-top: 1em;
+		font-size: 1.4rem;
+		color: #000;
+		@include breakpoint-lg {
+			margin-top: 0;
+		}
+		.sectionInformation__textBlock__list__item {
+			padding-left:1em;
+			text-indent:-1em;
+			&::before {
+				content: "";
+				width: 14px;
+				height: 14px;
+				margin-right: 5px;
+				display: inline-block;
+				background-color: #a2b6bd;
+				border-radius: 50%;/* 要素を丸くする */
+			}
+		}
+	}
+}
+
+#lifestyle h3.mainTitle {
+	padding: 4em 0 2em 0;
+	border-left: 4px solid $color_primary01;
+	@include breakpoint-xl {
+		padding: 130px 0 64px 0;
+	}
+	.mainTitle__read {
+		padding-left: 15px;
+		padding-bottom: .5em;
+		color: $color_primary01;
+		font-size: 1.2em;
+		line-height: 1.6em;
+		position: relative;
+		//border-bottom: 4px solid $color_primary01;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -15px;/*線の上下位置*/
+			display: inline-block;
+			width: 11em;/*線の長さ*/
+			height: 4px;/*線の太さ*/
+			background-color: $color_primary01;
+			@include breakpoint-lg {
+				width: 18em;/*線の長さ*/
+			}
+		}
+		@include breakpoint-sm {
+			font-size: 1.5em;
+		}
+		@include breakpoint-xl {
+			font-size: 1.7em;
+			padding-left: 30px;
+		}
+	}
+}
+
+#lifestyle .sectionMainRead {
+	padding: 0 15px;
+	@include breakpoint-xl {
+		padding-left: 30px;
+	}
+	p+p {
+		margin-top: 1em;
+	}
+}
+
+#lifestyle .mainPhotoBlock {
+	padding: 2em 15px 0;
+	@include breakpoint-xl {
+		padding-left: 30px;
+	}
+}
+
+#lifestyle .sectionIntro {
+	margin-top: 2em;
+	@include breakpoint-lg {
+		margin-top: 6em;
+	}
+	.sectionWrap {
+		position: relative;
+		padding-bottom: 2em;
+		width: 100%;
+		max-width: 822px;
+		background: rgba(255,255,255,.9);
+		z-index: 2;
+		@include breakpoint-lg {
+			text-align: center;
+		}
+	}
+	.sectionIntro__title {
+		text-align: center;
+		color: $color_primary01;
+		font-size: 1.8rem;
+		@include breakpoint-lg {
+			font-size: 2.7rem;
+			line-height: 1.8em;
+		}
+	}
+	.sectionIntro__read {
+		margin-top: 2em;
+	}
+	.sectionIntro__photo {
+		text-align: center;
+		@include breakpoint-lg {
+			z-index: 1;
+			margin-top: -5%;
+		}
+	}
+}
+
+#lifestyle .sectionAround {
+	.sectionWrap {
+
+	}
+	.sectionAround__inner {
+		position: relative;
+		z-index: 2;
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		.sectionAround__readBlock {
+			@include breakpoint-lg {
+				width: 50%;
+			}
+		}
+		.sectionAround__photoBlock {
+			margin: 2em 0 -5% auto;
+			width: 50%;
+			@include breakpoint-lg {
+				margin: 2em 2em -28% auto;
+				width: 40%;
+			}
+		}
+	}
+	.sectionAround__photoBlock02 {
+		z-index: 1;
+		@include breakpoint-lg {
+			margin-top: 3em;
+		}
+	}
+}
+
+#lifestyle .sectionKoukoen {
+	.sectionWrap {}
+	.sectionKoukoen__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+		}
+		.sectionKoukoen__photoBlock__list {
+			@include breakpoint-lg {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+			}
+			.sectionKoukoen__photoBlock__list__item {
+				@include breakpoint-lg {
+					width: 50%;
+				}
+			}
+		}
+	}
+	.sectionKoukoen__photoBlock02 {
+		.sectionKoukoen__photoBlock02__list {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+				@include breakpoint-lg {
+					margin: auto 0 auto auto;
+					max-width: 960px;
+				}
+			.sectionKoukoen__photoBlock02__list__item {
+				&.item01 {
+					@include breakpoint-lg {
+						margin-top: 3em;
+						margin-right: 2em;
+						width: 50%;
+					}
+				}
+				&.item02 {
+					@include breakpoint-lg {
+						margin-top: -3em;
+						width: 50%;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+#lifestyle .sectionOotemaeKouen {
+	.sectionWrap {
+
+	}
+	.sectionOotemaeKouen__inner {
+		position: relative;
+		z-index: 2;
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		.sectionOotemaeKouen__readBlock {
+			@include breakpoint-lg {
+				width: 35%;
+				position: relative;
+			}
+			figure {
+				margin: 1em auto -2em 0;
+				width: 70%;
+				z-index: 2;
+				@include breakpoint-lg {
+					position: absolute;
+					bottom: -23%;
+					right: -50%;
+					width: 100%;
+				}
+			}
+		}
+		.sectionOotemaeKouen__photoBlock {
+			z-index: 1;
+			@include breakpoint-lg {
+				width: 60%;
+			}
+		}
+	}
+	.BackToMapBT {
+		@include breakpoint-lg {
+			margin-top: 10em;
+		}
+	}
+}
+
+#lifestyle .sectionShirotopia {
+	.sectionWrap {}
+	.sectionShirotopia__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+		}
+	}
+
+}
+
+#lifestyle .sectionHimejiArtMuseum {
+	.sectionWrap {}
+	.sectionHimejiArtMuseum__inner {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+	}
+	.sectionHimejiArtMuseum__readBlock {
+		@include breakpoint-lg {
+			width: 32%;
+		}
+	}
+	.sectionHimejiArtMuseum__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 0;
+			width: 64%;
+		}
+	}
+
+}
+
+
+
+#lifestyle .sectionIntroShop {
+	margin-top: 2em;
+	padding-top: 3em;
+	@include breakpoint-lg {
+		margin-top: 6em;
+		padding-top: 6em;
+	}
+	.sectionWrap {
+		position: relative;
+		padding-bottom: 2em;
+		width: 100%;
+		max-width: 822px;
+		//background: rgba(255,255,255,.9);
+		z-index: 2;
+		@include breakpoint-lg {
+			text-align: center;
+		}
+	}
+	.sectionIntroShop__title {
+		
+		text-align: center;
+		color: $color_primary01;
+		font-size: 1.8rem;
+		@include breakpoint-lg {
+			font-size: 2.7rem;
+			line-height: 1.8em;
+		}
+	}
+	.sectionIntroShop__read {
+		background: rgba(255,255,255,.9);
+		margin-top: 2em;
+		padding: 1em;
+	}
+	.sectionIntroShop__photo {
+		text-align: center;
+		@include breakpoint-lg {
+			z-index: 1;
+			margin-top: -5%;
+		}
+	}
+}
+
+#lifestyle .sectionBakery {
+	.sectionBakery__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+		}
+		.sectionBakery__photoBlock__list {
+			margin-top: 2em;
+			@include breakpoint-lg {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-align: end;
+				-ms-flex-align: end;
+				align-items: flex-end;
+			}
+			.sectionBakery__photoBlock__list__item {
+				&.item01 {
+					@include breakpoint-lg {
+						width: 70%;
+						margin-bottom: 10%;
+					}
+				}
+				&.item02 {
+					@include breakpoint-lg {
+						margin: 0 0 0 -10%;
+						width: 34%;
+					}
+				}
+			}
+		}
+	}
+}
+
+#lifestyle .sectionPamelas {
+	.sectionWrap {}
+	.sectionPamelas__inner {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+	}
+	.sectionPamelas__readBlock {
+		@include breakpoint-lg {
+			width: 32%;
+		}
+	}
+	.sectionPamelas__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 0;
+			width: 64%;
+		}
+	}
+
+}
+
+#lifestyle .sectionPamelas {
+	.sectionWrap {}
+	.sectionPamelas__inner {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+	}
+	.sectionPamelas__readBlock {
+		@include breakpoint-lg {
+			width: 32%;
+		}
+	}
+	.sectionPamelas__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 0;
+			width: 64%;
+		}
+	}
+
+}
+
+#lifestyle .sectionPatisserie {
+	.sectionWrap {}
+	.sectionPatisserie__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+		}
+		.sectionPatisserie__photoBlock__list {
+			@include breakpoint-lg {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				.sectionPatisserie__photoBlock__list__item {
+					@include breakpoint-lg {
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+	.sectionPatisserie__photoBlock02 {
+		margin-top: 1em;
+		.sectionPatisserie__photoBlock02__list {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+				@include breakpoint-lg {
+					margin: auto 0 auto auto;
+					max-width: 730px;
+				}
+			.sectionPatisserie__photoBlock02__list__item {
+				margin-left: 1em;
+				@include breakpoint-lg {
+					width: 33.33%;
+				}
+			}
+		}
+	}
+}
+
+#lifestyle .sectionSoraniwa {
+	.sectionWrap {}
+	.sectionSoraniwa__photoBlock {
+		margin-top: 2em;
+		@include breakpoint-lg {
+			margin-top: 4em;
+		}
+		.sectionSoraniwa__photoBlock__list {
+			@include breakpoint-lg {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				.sectionSoraniwa__photoBlock__list__item {
+					@include breakpoint-lg {
+						width: 33.33%;
+					}
+				}
+			}
+		}
+	}
+}
+
+#lifestyle .sectionMap {
+	background: url("../images/member/column_lifestyle/map_bg01.png") center bottom;
+	background-size: cover;
+	.sectionWrap {
+		width: 100% !important;
+		padding: 0;
+		max-width: 980px;
+	}
+	h3 {
+		margin-top: 3em;
+		color: $color_primary01;
+		font-size:2rem;
+		text-align: center;
+		@include breakpoint-lg {
+			font-size: 2.7rem;
+		}
+	}
+	.active {
+		opacity: .7;
+	}
+	.sectionMap__inner {
+		margin-top: 3em;
+		padding: 1em;
+		background: $color_primary01;
+		@include breakpoint-lg {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		}
+	}
+	.sectionMap__mapIllustBlock {
+		margin: auto;
+		width: 90%;
+		@include breakpoint-lg {
+			width: 57%;
+		}
+	}
+	.sectionMap__mapList {
+		margin-top: 1em;
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		@include breakpoint-lg {
+			width: 38%;
+		}
+		.sectionMap__mapList__item {
+			width: 48%;
+			margin-top: .5em;
+			@include breakpoint-lg {
+				width: 100%;
+			}
+		}
+		&:first-of-type {
+			@include breakpoint-lg {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

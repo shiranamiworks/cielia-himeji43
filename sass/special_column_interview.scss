@@ -1,0 +1,320 @@
+@charset "utf-8";
+// ===================================================================
+// 限定コンテンツ コラム 姫路城を望むページ
+// ===================================================================
+@import "_utility";
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+	//margin-bottom: 2em;
+	background:url(../images/special/column_interview/bg_ttl.png) no-repeat;
+	background-size:cover;
+	background-position: 47% bottom;
+	@include breakpoint-lg {
+		background-position: 80% bottom;
+	}
+	@include breakpoint-xl {
+		//margin-bottom: 7em;
+		background-position: left 20%;
+	}
+	h2 {
+		position: relative;
+		top: auto;
+		left: auto;
+		text-align: left;
+	}
+	.page-ttl {
+		height: 350px;
+		@include breakpoint-xl {
+			height: 600px;
+		}
+		&__innerBlock {
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+			width: 60%;
+			max-width: 520px;
+			padding: 15px;
+			background: rgba(20, 46, 119, 0.75);
+			color: $color_white;
+			@include breakpoint-lg {
+				width: 50%;
+				top:50px;
+				bottom: auto;
+				right: 20px;
+			}
+			@include breakpoint-xl {
+				top: 150px;
+				right: auto;
+				left: 70%;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);/*位置調整*/
+				padding: 40px;
+			}
+			&__subTitle {
+				margin-bottom: 1em;
+				//width: 10em;
+				color: #a69266;
+				border-bottom: 1px solid #a69266;
+				@include breakpoint-xl {
+					font-size: 2rem;
+				}
+			}
+			&__title {
+				margin-bottom: 1em;
+				font-size: 1.8rem;
+				font-weight: 500;
+				@include breakpoint-xl {
+					font-size: 4rem;
+					line-height: 1.5em;
+				}
+			}
+			&__read {
+				font-size: 1.4rem;
+				line-height: 1.5em;
+				@include breakpoint-xl {
+					font-size: 1.8rem;
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+}
+
+
+
+#interview .sectionWrap {
+	padding-bottom: 4em;
+	@include breakpoint-xl {
+		padding: 0 80px 94px 80px;
+	}
+}
+
+h3.mainTitle {
+	padding: 4em 0 2em 0;
+	border-left: 4px solid $color_primary01;
+	@include breakpoint-xl {
+		padding: 130px 0 64px 0;
+	}
+	.mainTitle__read {
+		padding-left: 15px;
+		padding-bottom: .5em;
+		color: $color_primary01;
+		font-size: 1.2em;
+		line-height: 1.6em;
+		border-bottom: 4px solid $color_primary01;
+		@include breakpoint-sm {
+			font-size: 1.5em;
+		}
+		@include breakpoint-xl {
+			font-size: 1.7em;
+			padding-left: 30px;
+		}
+	}
+}
+
+.mainReadBlock {
+	padding: 0 15px;
+	@include breakpoint-xl {
+		padding-left: 30px;
+	}
+	p+p {
+		margin-top: 1em;
+	}
+}
+
+.mainPhotoBlock {
+	padding: 2em 15px 0;
+	@include breakpoint-xl {
+		padding-left: 30px;
+	}
+}
+
+
+.sectionWorldCulturalHeritage {
+	background:url(../images/special/column_interview/world_cultural_heritage_bg.png) no-repeat;
+	background-size:cover;
+	background-position: left bottom;
+	.sectionWrap {
+		@include breakpoint-xl {
+			background: rgba(255, 255, 255, .7);
+		}
+	}
+	.mainTitle__read {
+		@include breakpoint-sm {
+			width: 15em;
+		}
+	}
+}
+
+
+.sectionResidentialArea {
+	.mainTitle__read{
+		width: 15em;
+		@include breakpoint-xl {
+			width: 15em;
+		}
+	}
+	.mainPhotoBlock {
+		&__list {
+			@include breakpoint-lg {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+			&__item{
+				position: relative;
+				@include breakpoint-lg {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+
+
+.sectionEducation {
+	background: #f3ecf3;
+	.mainTitle__read{
+		width: 16em;
+		@include breakpoint-sm {
+			font-size: 1.4em !important;
+		}
+		@include breakpoint-lg {
+			width: 17em;
+		}
+		@include breakpoint-xl {
+			font-size: 1.7em !important;
+		}
+	}
+	.mainPhotoBlock {
+		padding: 2em 0 0 0;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+
+.sectionShopping {
+	.sectionWrap {
+
+	}
+	.mainTitle__read{
+		width: 15em;
+		@include breakpoint-lg {
+			width: 15em;
+		}
+	}
+	.mainPhotoBlock {
+		&__list {
+			@include breakpoint-lg {
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+			}
+			&__item{
+				position: relative;
+				@include breakpoint-lg {
+					width: 33.3%;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.sectionFuture {
+	.mainTitle__read{
+		width: 15em;
+		@include breakpoint-lg {
+			width: 15em;
+		}
+	}
+	.flexboxWrap {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: flex-start;
+		}
+		.mainReadBlock {
+			@include breakpoint-lg {
+				width: 48%;
+			}
+		}
+		.mainPhotoBlock {
+			@include breakpoint-lg {
+				padding-top: 0;
+				width: 48%;
+			}
+		}
+	}
+}
+
+
+.sectionPerson {
+	.sectionWrap {
+		max-width: 1040px;
+		padding-top: 2em;
+		background: #eeeeee;
+		@include breakpoint-lg {
+			padding: 40px 55px !important;
+		}
+	}
+	.flexboxWrap {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: flex-start;
+		}
+		.mainPhotoBlock {
+			margin-bottom: 1em;
+			width: 80%;
+			max-width: 207px;
+			@include breakpoint-lg {
+				padding: 0;
+				margin-bottom: 0;
+				//width: 207px;
+			}
+		}
+		.mainReadBlock {
+			@include breakpoint-lg {
+				padding-top: 30px;
+				margin-left: 56px;
+			}
+			&__name {
+				span {
+					font-size: 1.5em;
+					@include breakpoint-lg {
+
+					}
+				}
+			}
+		}
+	}
+}
+

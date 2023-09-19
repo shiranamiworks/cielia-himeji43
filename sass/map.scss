@@ -1,0 +1,185 @@
+@charset "utf-8";
+// ===================================================================
+// 案内図TOPページ
+// ===================================================================
+@import "_utility";
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+	background:url(../images/map/bg_ttl.png) no-repeat center center;
+	background-size:cover;	
+}
+
+.sectionMap {
+	margin-bottom: 3em;
+	padding-top: 3em;
+	@include breakpoint-xl {
+		padding-top: 6em;
+	}
+	&_img {
+		margin-bottom: 3em;
+		@include breakpoint-xl {
+			margin: 0 auto 6em auto;
+			width: 900px;
+		}
+	}
+	&_bt {
+		margin: 0 3em;
+		@include breakpoint-xl {
+			margin: 0 auto 0 auto;
+			width: 412px;
+		}
+	}
+}
+
+
+.sectionSalon {
+	margin-bottom: 3em;
+	padding-top: 3em;
+	font-size: 1.4rem;
+	line-height: 1.8em;
+	@include breakpoint-xl {
+		padding-top: 6em;
+	}
+	.sectionWrap {
+		max-width: 930px;
+	}
+	.sectionSalon__mainTitle {
+		font-size: 1.8rem;
+		border-top: 2px solid rgba($color_primary01,.5);
+		border-bottom: 2px solid rgba($color_primary01,.5);
+		text-align: center;
+		@include breakpoint-xl {
+			font-size: 2.2rem;
+		}
+		p {
+			margin: .1em 0;
+			padding: 1.7em 0;
+			border-top: 1px solid rgba($color_primary01,.5);
+			border-bottom: 1px solid rgba($color_primary01,.5);
+		}
+	}
+	h3.sectionSalon__title {
+		font-size: 1.5rem;
+		color: $color_accent02;
+		& + p {
+			margin-top: 1em;
+		}
+		&.second {
+			margin-top: 2em;
+		}
+	}
+
+	.sectionSalon__inner01 {
+		margin-top: 2em;
+		p+p {
+			margin-top: 1em;
+		}
+		&:nth-of-type(2) {
+			margin-top: 4em;
+		}
+		@include breakpoint-xl {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		.sectionSalon__inner01__photoblock {
+			@include breakpoint-xl {
+				width: 60%;
+			}
+		}
+		.sectionSalon__inner01__readblock {
+			@include breakpoint-xl {
+				width: 35%;
+			}
+			.sectionSalon__inner01__readblock__annnai01 {
+				margin-top: 2em;
+				padding-bottom: 2em;
+				border-bottom: 1px solid rgba($color_primary01,.5);
+				@include breakpoint-xl {
+					margin-top: 0;
+				}
+				.address {
+					font-size: 1.8rem;
+				}
+			}
+			.sectionSalon__inner01__readblock__annnai03 {
+				margin-top: 2em;
+				@include breakpoint-xl {
+					margin-top: 0;
+				}
+			}
+			.carnavi {
+				padding: 1em;
+				text-align: center;
+				font-size: 2.4rem;
+				color: $color_primary01;
+				background: #e0e6f8;
+			}
+		}
+	}
+	
+	.sectionSalon__inner02 {
+		margin-top: 4em;
+		@include breakpoint-xl {
+			margin-top: 6em;
+		}
+		h3.sectionSalon__inner02Title {
+			text-align: center;
+			font-size: 2.2rem;
+			color: $color_accent02;
+		}
+		ul {
+			margin-top: 2em;
+			@include breakpoint-xl {
+				margin-top: 0;
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			li {
+				margin-top: 3em;
+				@include breakpoint-xl {
+					width: 48%;
+				}
+				figure {}
+				p {
+					margin-top: 1em;
+					line-height: 1.7em;
+				}
+			}
+		}
+	}
+	
+	.sectionSalon__inner03 {
+		margin-top: 4em;
+		@include breakpoint-xl {
+			margin-top: 6em;
+		}
+	}
+}
+
+span.pointText {
+	color: $color_accent02;
+}
+span.pointTextLine {
+	color: $color_accent02;
+	border-bottom: 1px solid $color_accent02;
+	padding-bottom: 0.2em;
+}
+span.tel {
+	padding: 0 .2em;
+	color: $color_accent02;
+	font-size: 2.2rem;
+}

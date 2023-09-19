@@ -1,0 +1,85 @@
+@charset "utf-8";
+// ===================================================================
+// モデルルームページ
+// ===================================================================
+@import "_utility";
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+	background:url(../images/modelroom/bg_ttl.png) no-repeat center center;
+	background-size:cover;	
+}
+figure {
+	position: relative;
+	figcaption {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 0 .5em;
+		color: #FFF;
+		font-size: 1.2rem;
+		line-height: 1.4em;
+		background: rgba(80, 80, 80, 0.75);
+		@include breakpoint-md {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.sectionIntro {
+	padding-bottom: 2em;
+	@include breakpoint-xl {
+		//padding-bottom: 8em;
+	}
+	.sectionTitle {
+		margin: 85px auto 30px auto;
+		@include breakpoint-xl {
+			margin: 115px auto 4em auto;
+		}
+	}
+}
+
+.photoList {
+	figure {
+		margin-top: 2%;
+		@include breakpoint-md {
+			margin-top: 1%;
+		}
+	}
+	.single {
+
+	}
+	.double {
+		display: block;
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		.small {
+			width: 100%;
+			@include breakpoint-lg {
+				width: 41%;
+			}
+		}
+		.lage {
+			width: 100%;
+			@include breakpoint-lg {
+				width: 58%;
+			}
+		}
+	}
+	.double02 {
+		figure + figure {
+			@include breakpoint-lg {
+				margin-left: 1%;
+			}
+		}
+	}
+}

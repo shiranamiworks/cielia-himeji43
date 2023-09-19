@@ -1,0 +1,21 @@
+@charset "utf-8";
+// ===================================================================
+// 限定コンテンツ シエリアインフォメーション
+// ===================================================================
+@import "_utility";
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+	background:url(../images/special/special_blog/bg_ttl.png) no-repeat;
+	background-size:cover;
+	background-position: 40% bottom;
+	@include breakpoint-xl {
+		background-position: center bottom;
+	}
+}
+
+
+

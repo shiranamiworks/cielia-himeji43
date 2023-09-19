@@ -1,0 +1,396 @@
+@charset "utf-8";
+// ===================================================================
+// 限定コンテンツ コラム 設計者インタビュー
+// ===================================================================
+@import "_utility";
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+	background: rgba(20, 46, 119, 1) url(../images/member/column_interview02/bg_ttl_sp.png) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	@include breakpoint-lg {
+		background:url(../images/member/column_interview02/bg_ttl.png) no-repeat;
+		background-size:cover;
+		background-position: 25% bottom;
+	}
+	h2 {
+		position: relative;
+		top: auto;
+		left: auto;
+		text-align: left;
+	}
+	.page-ttl {
+		height: 110vw;
+		max-height: 500px;
+		@include breakpoint-lg {
+			max-height: 450px;
+		}
+		@include breakpoint-xl {
+			max-height: 600px;
+		}
+		&__innerBlock {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 15px;
+			background: rgba(20, 46, 119, 1);
+			color: $color_white;
+			@include breakpoint-lg {
+				background: rgba(20, 46, 119, 0.75);
+				position: absolute;
+				top:50%;
+				right: 20px;
+				bottom: inherit;
+				padding: 15px;
+				width: 50%;
+				max-width: 520px;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);/*位置調整*/
+			}
+			@include breakpoint-xl {
+				top: 150px;
+				right: auto;
+				left: 70%;
+				bottom: inherit;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);/*位置調整*/
+				padding: 40px;
+			}
+			&__subTitle {
+				margin-bottom: 1em;
+				display: inline-block;
+				color: #a69266;
+				border-bottom: 1px solid #a69266;
+				@include breakpoint-xl {
+					font-size: 2rem;
+				}
+			}
+			&__title {
+				margin-bottom: .5em;
+				font-size: 1.8rem;
+				font-weight: 500;
+				@include breakpoint-xl {
+					font-size: 4rem;
+					line-height: 1.5em;
+				}
+				span.small {
+					position: static;
+					font-size: 1.8rem;
+				}
+			}
+			&__read {
+				font-size: 1.4rem;
+				line-height: 1.5em;
+				p:nth-child(2) {
+					margin-top: 1em;
+				}
+				@include breakpoint-xl {
+					font-size: 1.8rem;
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+}
+
+#interview02 figure {
+	position: relative;
+	figcaption {
+		position: absolute;
+		bottom:0;
+		right:0;
+		padding: .1em .2em;
+		font-size: 1.2rem;
+		line-height: 1em;
+		color: $color_white;
+		background: rgba($color_black, .8);
+	}
+}
+
+#interview02 .sectionWrap {
+	padding-bottom: 4em;
+	@include breakpoint-lg {
+		padding: 0 .5em 4em .5em;
+		font-size: 1.5rem;
+	}
+	@include breakpoint-xl {
+		padding: 0 80px 94px 80px;
+		font-size: 1.6rem;
+	}
+}
+
+.mainTitle {
+	margin-bottom: 2em;
+	padding: 4em 0 0 0;
+	border-left: 4px solid $color_primary01;
+	@include breakpoint-xl {
+		padding: 130px 0 0 0;
+	}
+	.mainTitle__read {
+		padding-left: 15px;
+		padding-bottom: .5em;
+		color: $color_primary01;
+		border-bottom: 4px solid $color_primary01;
+		@include breakpoint-xl {
+			padding-left: 30px;
+		}
+		&__part {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			margin-bottom: .5em;
+			line-height: 1.5em;
+			span.num {
+				padding: 0 .3em;
+				color: $color_white;
+				background: $color_primary01;
+				font-size: 1.2rem;
+				@include breakpoint-xl {
+					font-size: 1.8rem;
+				}
+				em {
+					padding-left: .2em;
+					font-style: normal;
+				}
+			}
+			span.text {
+				padding-left: .3em;
+				font-weight: 600;
+				font-size: 2rem;
+				@include breakpoint-xl {
+					font-size: 2.7rem;
+				}
+			}
+		}
+		&__text {
+			font-weight: 600;
+			font-size: 1.5rem;
+			line-height: 2em;
+			@include breakpoint-xl {
+				font-size: 2rem;
+				line-height: 2.2em;
+			}
+		}
+	}
+	h3.mainTitle__title {
+		padding-left: 15px;
+		padding-top: 1em;
+		color: $color_primary01;
+		font-size: 2rem;
+		line-height: 1.5em;
+		@include breakpoint-xl {
+			font-size: 2.7rem;
+			padding-left: 30px;
+		}
+	}
+}
+
+.mainReadBlock {
+	padding: 0 15px;
+	@include breakpoint-xl {
+		padding-left: 30px;
+	}
+	p+p {
+		margin-top: 1em;
+	}
+	figure+p {
+		margin-top: 1em;
+	}
+}
+
+.mainPhotoBlock {
+	padding: 2em 15px 0;
+	@include breakpoint-xl {
+		padding-left: 30px;
+	}
+}
+
+.sectionPart01 {
+	background:url(../images/member/column_interview02/concept01_bg.png) no-repeat;
+	background-size:cover;
+	background-position: left bottom;
+	.sectionWrap {
+		@include breakpoint-lg {
+			background: rgba(255, 255, 255, .7);
+		}
+	}
+	&__inner {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+	}
+	&__readBlock {
+		@include breakpoint-lg {
+			width: 45%;
+		}
+	}
+	&__photoBlock {
+		margin: 2em 0 0 auto;
+		width: 80%;
+		max-width: 550px;
+		@include breakpoint-lg {
+			margin-top: 0;
+			width: 50%;
+		}
+	}
+}
+
+.sectionPart02 {
+	&__photoBlock {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		width: 100vw !important;
+		margin-left: calc( 50% - 50vw );
+		margin-right: calc( 50% - 50vw );
+		max-width: none;
+		@include breakpoint-xl {
+			margin-top: 4em;
+			margin-bottom: 4em;
+			width: 1200px !important;
+			margin-left: calc( 50% - 1200px / 2 ) !important;
+		}
+	}
+}
+
+.sectionPart03 {
+	.mainTitle__read__part span.text {
+	font-size: 1.8rem;
+	@include breakpoint-xl {
+		font-size: 2.7rem;
+	}
+	}
+	background: #f2f5f7;
+	&__inner {
+		margin-top: 5em;
+		margin-bottom: 2em;
+		@include breakpoint-lg {
+			margin-bottom: 6em;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		&.photoRight {
+			@include breakpoint-lg {
+				margin-bottom: 0;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+			}
+		}
+	}
+	&__photoBlock {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		width: 100vw !important;
+		margin-left: calc( 50% - 50vw );
+		margin-right: calc( 50% - 50vw );
+		max-width: none;
+		@include breakpoint-lg {
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-right: 0;
+			width: 57vw !important;
+		}
+		&.photoRight {
+			@include breakpoint-lg {
+				margin-left: 0;
+				margin-right: calc( 50% - 50vw );
+			}
+		}
+	}
+	&__readBlock {
+		@include breakpoint-lg {
+			width: 35%;
+		}
+	}
+}
+
+.sectionPart04 {
+	background: $color_primary01;
+	color: $color_white;
+	.sectionWrap {
+		padding: 10% !important;
+		@include breakpoint-lg {
+			padding: 40px 80px !important;
+		}
+	}
+	&__inner {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+	}
+	&__readBlock {
+		@include breakpoint-lg {
+			width: 65%;
+		}
+	}
+	&__photoBlock {
+		@include breakpoint-lg {
+			width: 25%;
+		}
+	}
+	&__mainTitle {
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		margin-bottom: 2em;
+		line-height: 1.5em;
+		span.num {
+			padding: 0 .3em;
+			font-size: 1.2rem;
+			border: 1px solid $color_white;
+			@include breakpoint-xl {
+				font-size: 1.8rem;
+			}
+			em {
+				padding-left: .2em;
+				font-style: normal;
+			}
+		}
+		span.text {
+			padding-left: .3em;
+			font-weight: 600;
+			font-size: 2rem;
+			@include breakpoint-xl {
+				font-size: 2.7rem;
+			}
+		}
+	}
+	&__nameBlock {
+		margin-bottom: 3em;
+		&__office {
+			margin-bottom: 1em;
+		}
+		&__name {
+			font-size: 3.2rem;
+		}
+	}
+	figure {
+		margin-top: 2em;
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+@charset "utf-8";
+// ===================================================================
+// スペシャルTOPページ
+// ===================================================================
+@import "_utility";
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+	background:url(../images/special/index_bg_ttl.png) no-repeat center center;
+	background-size:cover;	
+}
+
+.sectionBnr {
+	margin-bottom: 3em;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	background:url("../images/special/index_bg01.png") no-repeat;
+	background-size: cover;
+	background-position: center top;
+	@include breakpoint-xl {
+		padding-top: 6em;
+	}
+	.sectionWrap {
+		padding: 2em 5%;
+		width: 90%;
+		max-width: 1012px;
+		background: $color_white;
+		@include breakpoint-xl {
+			padding: 2em 2%;
+		}
+	}
+	.sectionBnr__title {
+		text-align: center;
+		font-size: 1.8rem;
+		@include breakpoint-xl {
+			font-size: 2.5rem;
+		}
+	}
+	.sectionTitle {
+		margin: 85px auto 100px auto;
+		@include breakpoint-xl {
+			margin: 115px auto 4em auto;
+			h3 {
+				margin: 0 auto 0 auto;
+				padding-top: 50px;
+				padding-bottom: 70px;
+				width: 360px;
+			}
+		}
+	}
+	.sectionBnr__List {
+		margin-bottom: 3em;
+		width: 100%;
+		max-width: 1012px;
+		overflow: hidden;
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+		.sectionBnr__List__item {
+			margin-top: 3em;
+			@include breakpoint-lg {
+				width: 48%;
+			}
+			a {
+				display: block;
+				transition: 0.6s;
+				text-align: center;
+				.sectionBnr__List__item__text {
+					margin-top: 1em;
+					padding: 0 1em;
+					line-height: 1.5em;
+					font-size: 1.2rem;
+					color: $color_accent02_bright;
+					@include breakpoint-lg {
+						font-size: 1.3rem;
+					}
+					em {
+						margin-top: .3em;
+						display: block;
+						font-style: normal;
+						font-size: 2rem;
+						color: $color_gray05;
+						line-height: 1.3em;
+						@include breakpoint-lg {
+							font-size: 2.5rem;
+						}
+					}
+				}
+				.new {
+					margin-top: .2em;
+					color: $color_gray04;
+					@include breakpoint-lg {
+						font-size: 1.5rem;
+						line-height: 1;
+					}
+					em {
+						font-style: normal;
+						color: $color_accent01;
+					}
+				}
+				&:hover {
+					opacity: .8;
+				}
+			}
+		}
+	}
+}

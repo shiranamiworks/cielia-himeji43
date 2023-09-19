@@ -1,0 +1,554 @@
+@charset "utf-8";
+// ===================================================================
+// 限定コンテンツ シエリアサロン・モデルルームのご案内
+// ===================================================================
+@import "_utility";
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+	background:url(../images/member/salon/bg_ttl.png) no-repeat;
+	background-size:cover;
+	background-position: 40% bottom;
+	@include breakpoint-xl {
+		background-position: center bottom;
+	}
+}
+
+.salonH2Title {
+	padding-top: 2em;
+	@include breakpoint-lg {
+		padding-top: 0;
+	}
+}
+
+#salon {
+	@include breakpoint-lg {
+		font-size: 1.6rem;
+		line-height: 1.8em;
+	}
+	@include breakpoint-xl {
+		font-size: 1.8rem;
+		line-height: 1.8em;
+	}
+}
+
+
+#salon .sectionSalonIntro {
+	.sectionTitle {
+		position: relative;
+		//margin-bottom: 4em;
+		margin-bottom: 2em;
+		@include breakpoint-lg {
+			//margin-bottom: 96px;
+			margin-bottom: 46px;
+		}
+		h3 {
+			padding-top: 65px;
+			color: rgba(20, 46, 119, 1);
+			font-size: 2.2rem;
+			line-height: 1.5em;
+			text-align: center;
+			@include breakpoint-lg {
+				padding-top: 95px;
+				font-size: 3rem;
+				font-weight: 600;
+				line-height:1.7em;
+			}
+		}
+	}
+	.heightLine::before {
+		content: "";
+		display: block;
+		flex-grow: 1;
+		background: rgba(31, 31, 31, 1);
+		width: 1px;
+		height: 65px;
+		position: absolute;
+		left:50%;
+		top:0px;
+		@include breakpoint-lg {
+			height: 95px;
+			top:0px;
+		}
+	}
+	.sectionWrap {
+		position: relative;
+		background: $color_white;
+		//background: #CCC;
+		margin: 0 20px;
+		padding-bottom: 5px;
+		@include breakpoint-lg {
+			text-align: center;
+			padding: 0 64px 10px 64px;
+		}
+		@include breakpoint-xl {
+			margin: 0 auto;
+			padding: 0;
+			width: 800px;
+		}
+	}
+	&__list {
+		margin-top: 2em;
+		padding: 1em;
+		background: $color_gray01;
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			margin-top: 3em;
+		}
+		dt {
+			padding: .5em;
+			text-align: center;
+			color: $color_white;
+			background: $color_primary01;
+			font-size: 1.8rem;
+			@include breakpoint-lg {
+				width: 25%;
+				display:-webkit-box;
+				display:-ms-flexbox;
+				display:flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				font-size: 2rem;
+				padding: 2em .5em;
+			}
+		}
+		dd {
+			text-align: left;
+			margin-top: 1em;
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 72%;
+			}
+			ul {
+				@include breakpoint-lg {
+					display:-webkit-box;
+					display:-ms-flexbox;
+					display:flex;
+					-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+					
+					li {
+						&:nth-child(odd) {
+							@include breakpoint-lg {
+								width: 40%;
+							}
+						}
+						&:nth-child(even) {
+							@include breakpoint-lg {
+								width: 55%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#salon .sectionSalonFlow {
+	border-top: 1px solid $color_white;
+	margin-top: 4em;
+	padding-bottom: 4em;
+	background: url("../images/member/salon/salonFlow_bg01.png") center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	@include breakpoint-lg {
+		padding-bottom: 8em;
+	}
+	.sectionTitle {
+		position: relative;
+		margin: 85px auto 30px auto;
+		@include breakpoint-xl {
+			margin: 115px auto 4em auto;
+		}
+		.sectionTitle__sub {
+			margin-bottom: 1em;
+			text-align: center;
+			font-size: 1.5rem;
+			color: rgba(31, 31, 31, 1);
+			@include breakpoint-xl {
+				font-size: 2rem;
+				margin-bottom: 2em;
+			}
+		}
+		h3 {
+		color: rgba(20, 46, 119, 1);
+		font-size: 2.2rem;
+		line-height: 1.5em;
+		text-align: center;
+			@include breakpoint-lg {
+			font-size: 3rem;
+			font-weight: 600;
+			line-height:1.7em;
+			letter-spacing: 0.1em;
+			}
+		}
+	}
+	.heightLine::before {
+		content: "";
+		display: block;
+		flex-grow: 1;
+		background: rgba(31, 31, 31, 1);
+		width: 1px;
+		height: 65px;
+		position: absolute;
+		left:50%;
+		top:-85px;
+		@include breakpoint-lg {
+			height: 95px;
+			top:-115px;
+		}
+	}
+	.sectionWrap {
+		position: relative;
+		margin: auto;
+		width: 90%;
+		max-width: 1200px;
+	}
+	&__topRead {
+		text-align: center;
+	}
+	&__flowItemBlock {
+		margin-top: 4em;
+		&.step01 {
+			margin-top: 2em;
+			@include breakpoint-lg {
+				margin-top: 4em;
+			}
+		}
+		@include breakpoint-lg {
+			margin-top: 8em;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+		}
+		&__photoBlock {
+			@include breakpoint-lg {
+				width: 50%;
+			}
+			@include breakpoint-xl {
+				width: 60%;
+			}
+		}
+		&__readBlock {
+			@include breakpoint-lg {
+				width: 50%;
+			}
+			@include breakpoint-xl {
+				width: 40%;
+			}
+			&__title {
+				margin-top: 1em;
+				margin-bottom: 0;
+				text-align: left;
+				color: $color_primary01;
+				&__num {
+					border-bottom: 1px solid $color_primary01;
+					@include breakpoint-lg {
+						padding-left: 10%;
+					}
+					em {
+						padding-left: .2em;
+						font-style: normal;
+						font-size: 4rem;
+						font-weight: 400;
+						@include breakpoint-lg {
+							font-size: 8rem;
+						}
+					}
+				}
+				&__text {
+					margin-top: .5em;
+					font-size: 2.5rem;
+					@include breakpoint-lg {
+						padding-left: 10%;
+						font-size: 3.4rem;
+					}
+					span {
+						font-size: 1.5rem;
+						color: $color_gray04;
+					}
+				}
+			}
+			&__text {
+				margin-top: .5em;
+				@include breakpoint-lg {
+					padding-left: 10%;
+				}
+			}
+		}
+	}
+}
+
+#salon .sectionSalonFlow {
+	.sectionSalonFlow__flowItemBlock.right {
+		@include breakpoint-lg {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+		.sectionSalonFlow__flowItemBlock__readBlock__title__num {
+			@include breakpoint-lg {
+				padding-left: 0;
+				padding-right: 10%;
+			}
+		}
+		.sectionSalonFlow__flowItemBlock__readBlock__title__text {
+			@include breakpoint-lg {
+				padding-left: 0;
+			}
+		}
+		.sectionSalonFlow__flowItemBlock__readBlock__text {
+			@include breakpoint-lg {
+				padding-left: 0;
+				padding-right: 10%;
+			}
+		}
+	}
+}
+
+#salon .sectionModelroom {
+		&__Intro {
+		position: relative;
+		z-index: -1;
+		border-top: 1px solid $color_white;
+		margin-top: 4em;
+		background: url("../images/member/salon/modelroom_bg01.png") center center no-repeat;
+		@include breakpoint-lg {
+			background: url("../images/member/salon/modelroom_bg01.png") center top no-repeat;
+			padding-bottom: 8em;
+		}
+		.sectionTitle {
+			position: relative;
+			margin: 85px auto 30px auto;
+			color: $color_white;
+			@include breakpoint-xl {
+				margin: 115px auto 4em auto;
+			}
+			.sectionTitle__sub {
+				margin-bottom: 1em;
+				text-align: center;
+				font-size: 1.5rem;
+				color: rgba(31, 31, 31, 1);
+				color: $color_white;
+				@include breakpoint-xl {
+					font-size: 2rem;
+					margin-bottom: 2em;
+				}
+			}
+			h3 {
+			color: $color_white;
+			font-size: 2.2rem;
+			line-height: 1.5em;
+			text-align: center;
+				@include breakpoint-lg {
+				font-size: 3rem;
+				font-weight: 600;
+				line-height:1.7em;
+				letter-spacing: 0.1em;
+				}
+			}
+		}
+		.heightLine::before {
+			content: "";
+			display: block;
+			flex-grow: 1;
+			background: $color_white;
+			width: 1px;
+			height: 65px;
+			position: absolute;
+			left:50%;
+			top:-85px;
+			@include breakpoint-lg {
+				height: 95px;
+				top:-115px;
+			}
+		}
+		.sectionModelroom__topRead {
+			margin: auto;
+			padding-bottom: 8em;
+			width: 90%;
+			max-width: 1200px;
+			text-align: center;
+			color: $color_white;
+			@include breakpoint-lg {
+				padding-bottom: 4em;
+			}
+		}
+	}
+	.sectionWrap {
+		position: relative;
+		z-index: 2;
+		margin: auto;
+		margin-top: -5em;
+		padding-top: 5%;
+		width: 90%;
+		max-width: 1200px;
+		background: $color_white;
+		@include breakpoint-lg {
+			margin-top: -6.5em;
+			padding: 2em;	
+		}
+	}
+	&__flowItemBlock {
+		margin-top: 4em;
+		&.step01 {
+			margin-top: 0;
+		}
+		@include breakpoint-lg {
+			margin-top: 6em;
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-align: end;
+			-ms-flex-align: end;
+			align-items: flex-end;
+		}
+		&__photoBlock {
+			@include breakpoint-lg {
+				width: 48%;
+			}
+			@include breakpoint-xl {
+				width: 55%;
+			}
+		}
+		&__readBlock {
+			@include breakpoint-lg {
+				padding-left: 4%;
+				width: 48%;
+			}
+			@include breakpoint-xl {
+				width: 40%;
+				padding-right: 7%;
+			}
+			&__title {
+				margin-top: 1em;
+				margin-bottom: 0;
+				text-align: left;
+				color: $color_accent02;
+				&__text {
+					font-size: 2.5rem;
+					span {
+						font-size: 1.5rem;
+						color: $color_gray04;
+					}
+				}
+			}
+			&__text {
+				margin-top: .5em;
+			}
+		}
+	}
+}
+
+#salon .sectionModelroom {
+	.sectionModelroom__flowItemBlock.right {
+		@include breakpoint-lg {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		}
+		.sectionModelroom__flowItemBlock__readBlock {
+			@include breakpoint-lg {
+				padding-left: 0;
+				padding-right: 4%;
+			}
+			@include breakpoint-xl {
+				padding-right: 4%;
+				padding-left: 7%;
+			}
+		}
+	}
+}
+
+#salon .sectionPlan {
+	position: relative;
+	margin-top: 5em;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background: $color_gray01;
+	@include breakpoint-lg {
+		margin-top: 8em;
+		padding-top: 8em;
+	}
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 50%; 
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);/*位置調整*/
+		font-family: 'EB Garamond', serif;
+		content: 'MODELROOMPLAN';
+		font-size: 10vw;
+		line-height: .8em;
+		color: rgba($color_gray02,.3);
+		@include breakpoint-lg {
+			font-size: 8vw;
+			line-height: .6em;
+		}
+	}
+	.sectionWrap {
+		margin: auto;
+		padding: 5% 1em;
+		width: 90%;
+		max-width: 1200px;
+		background: $color_white;
+		@include breakpoint-lg {
+			padding: 3em;
+		}
+	}
+	&__inner {
+		@include breakpoint-lg {
+			display:-webkit-box;
+			display:-ms-flexbox;
+			display:flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
+		&__readBlock {
+			@include breakpoint-lg {
+				width: 45%;
+			}
+			&__title {
+				
+			}
+			&__spec {
+				margin-top: 1.5em;
+				text-align: left;
+				@include breakpoint-lg {
+					margin-top: 3em;
+				}
+				img {
+					width: 90%;
+					max-width: 375px;
+				}
+			}
+		}
+		&__madoriBlock {
+			margin-top: 2em;
+			@include breakpoint-lg {
+				margin-top: 0;
+				width: 50%;
+			}
+		}
+	}
+}
