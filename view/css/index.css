@@ -1,0 +1,167 @@
+.sectionView {
+  position: relative;
+  max-width: 100%; }
+
+.sectionView__view {
+  width: 100%; }
+  .sectionView__view .middle__center__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .sectionView__view .middle__center__list li.flex-item-00-shrink {
+      flex: 0 1 874px; }
+    .sectionView__view .middle__center__list li.flex-item-01-shrink {
+      flex: 0 1 254px; }
+    .sectionView__view .middle__center__list li.flex-item-02-shrink {
+      flex: 0 1 250px; }
+    .sectionView__view .middle__center__list li.flex-item-03-shrink {
+      flex: 0 1 202px; }
+    .sectionView__view .middle__center__list li.flex-item-04-shrink {
+      flex: 0 1 340px; }
+    .sectionView__view .middle__center__list li img {
+      opacity: .8; }
+
+.sectionView__title {
+  position: fixed;
+  top: 50%;
+  left: 7vw;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .sectionView__title_img {
+    width: 30vw;
+    max-width: 450px;
+    opacity: .9; }
+
+/* =========================================================
+	.cap
+========================================================== */
+span.cap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 1%;
+  color: #C3C3C3;
+  font-size: 1.1rem;
+  background: rgba(30, 30, 30, 0.7);
+  line-height: 1.4rem; }
+  @media screen and (min-width: 1104px) {
+    span.cap {
+      font-size: 1.4rem;
+      line-height: 1.6rem; } }
+
+.min-note {
+  font-size: 1.2rem; }
+  @media screen and (min-width: 1104px) {
+    .min-note {
+      font-size: 0.8rem; } }
+
+/* =========================================================
+	#photoView
+========================================================== */
+.viewPanoramaWrap .viewPanorama {
+  background: #181777;
+  position: relative;
+  height: 95vh; }
+  .viewPanoramaWrap .viewPanorama .imageBlock img {
+    max-height: 95vh; }
+  .viewPanoramaWrap .viewPanorama .floorMapBlock {
+    padding: 0 20px 20px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 95vh;
+    vertical-align: bottom;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    .viewPanoramaWrap .viewPanorama .floorMapBlock__type {
+      padding-bottom: 20px;
+      color: #FFF;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 3vh;
+      line-height: 1em; }
+      .viewPanoramaWrap .viewPanorama .floorMapBlock__type .floor {
+        padding-right: 10px;
+        border-right: 1px solid #CCC; }
+      .viewPanoramaWrap .viewPanorama .floorMapBlock__type .type {
+        padding-left: 10px; }
+      .viewPanoramaWrap .viewPanorama .floorMapBlock__type span {
+        padding-right: 3px;
+        font-size: 3.5vh; }
+    .viewPanoramaWrap .viewPanorama .floorMapBlock__floorImg {
+      width: 20vw; }
+      .viewPanoramaWrap .viewPanorama .floorMapBlock__floorImg_d {
+        width: 25vw; }
+.viewPanoramaWrap .note {
+  padding: 0;
+  margin-top: 0.5em;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: right; }
+
+
+@media screen and (max-width: 960px) {
+  .viewPanoramaWrap .viewPanorama {
+  background: #181777;
+  height: auto;
+  }
+
+  .viewPanoramaWrap .viewPanorama .imageBlock img {
+   max-height: auto;
+   }
+
+  .viewPanoramaWrap .viewPanorama .floorMapBlock {
+  padding: 0;
+  position: absolute;
+  height: auto;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  margin: 100px auto;
+  display: block;
+  }
+
+  .viewPanoramaWrap .viewPanorama .floorMapBlock__floorImg {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 20px auto;
+  }
+  
+  .viewPanoramaWrap .viewPanorama .floorMapBlock__floorImg_d {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 20px auto;
+  }
+
+  .viewPanoramaWrap .viewPanorama .floorMapBlock__type .floor {
+  color: #000;
+  }
+  
+  .viewPanoramaWrap .viewPanorama .floorMapBlock__type .type {
+  color: #000;
+  }
+
+  .viewPanoramaWrap .viewPanorama .floorMapBlock__type {
+  padding-bottom: 0px;
+  }
+
+  .viewPanoramaWrap .note {
+  width: 90%;
+  margin: 20px auto 0;
+  text-align: left;
+  }
+
+}
