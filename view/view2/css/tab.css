@@ -1,0 +1,5 @@
+.viewPanorama .viewArea, .viewPanorama .navNext, .viewPanorama .navPrev {
+  height: 78vh; }
+.viewPanorama .panoramaContent {
+  position: relative;
+  height: 78vh; }
