@@ -1,0 +1,1029 @@
+/* brake point */
+/* font color */
+/* =========================================================
+	hack IE
+========================================================== */
+/* =========================================================
+	.alignfull  & .alignwide
+========================================================== */
+.alignfull {
+  width: 100vw !important;
+  margin-left: calc( 50% - 50vw );
+  margin-right: calc( 50% - 50vw );
+  max-width: none; }
+
+@media screen and (max-width: 1103px) {
+  .alignfull_sp {
+    padding: 0;
+    width: 100vw !important;
+    margin-left: calc( 50% - 50vw );
+    margin-right: calc( 50% - 50vw );
+    max-width: none; } }
+
+@media screen and (min-width: 1104px) {
+  .alignwide {
+    width: 1104px !important;
+    margin-left: calc( 50% - 1104px / 2 ) !important; } }
+
+/* =========================================================
+	.cap
+========================================================== */
+span.cap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 1%;
+  color: #bfbfbf;
+  font-size: 1.1rem;
+  background: rgba(30, 30, 30, 0.7); }
+  @media screen and (min-width: 1104px) {
+    span.cap {
+      font-size: 1.4rem;
+      line-height: 1.6rem; } }
+
+.min-note {
+  font-size: 1.2rem; }
+  @media screen and (min-width: 1104px) {
+    .min-note {
+      font-size: 0.8rem; } }
+
+span.minuteWalkTimes {
+  font-size: 0.8em; }
+
+/* =========================================================
+	.sectionTitle
+========================================================== */
+.sectionTitle {
+  position: relative; }
+  .sectionTitle .sectionTitle__sub {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1f1f1f; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle .sectionTitle__sub {
+        font-size: 2rem;
+        margin-bottom: 2em; } }
+  .sectionTitle h3 {
+    color: #142e77;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    text-align: center; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle h3 {
+        font-size: 3.8rem;
+        font-weight: 600;
+        line-height: 1.7em;
+        letter-spacing: 0.1em; } }
+
+.heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: #1f1f1f;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: -85px; }
+  @media screen and (min-width: 1104px) {
+    .heightLine::before {
+      height: 95px;
+      top: -115px; } }
+
+h4 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: #70452e;
+  text-align: center; }
+  @media screen and (min-width: 1104px) {
+    h4 {
+      margin-bottom: 2em;
+      font-size: 2.8rem;
+      line-height: 1.8em;
+      font-weight: 600; } }
+
+.sideAlphabet {
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .sideAlphabet::before {
+    content: '';
+    width: 5%;
+    max-width: 15px;
+    min-width: 10px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle; }
+
+/* =========================================================
+	.gotoBT
+========================================================== */
+.gotoBT a {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  background: #142e77;
+  color: #FFF;
+  line-height: 1;
+  text-align: center;
+  transition: .3s; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a {
+      max-width: 485px;
+      padding: 22px 0;
+      font-size: 1.8rem; } }
+
+.gotoBT a:hover {
+  opacity: .7; }
+
+.gotoBT a::after {
+  right: 12px;
+  width: 9px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  background: url(../images/common/arw_btn.png) no-repeat;
+  background-size: 100% auto;
+  transition: .3s; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a::after {
+      right: 20px; } }
+
+.gotoBT a:hover::after {
+  right: 8px; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a:hover::after {
+      right: 10px; } }
+
+.gotoBT.white a {
+  background: white;
+  color: #191917; }
+
+.gotoBT.white a::after {
+  background: url(../images/common/arw_btn_black.png) no-repeat;
+  background-size: 100% auto; }
+
+.gotoBT_comingsoon span {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 1px solid white;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  opacity: .8; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT_comingsoon span {
+      max-width: 485px;
+      padding: 22px 0;
+      font-size: 1.8rem; } }
+
+.gotoBT_comingsoon.op04 span {
+  opacity: .4; }
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+  background: url(../images/location/bg_ttl.png) no-repeat center center;
+  background-size: cover; }
+
+.sectionArea {
+  padding-bottom: 3em;
+  background: url("../images/location/area_bg01.png") no-repeat;
+  background-size: 400% auto;
+  background-position: 10% bottom; }
+  @media screen and (min-width: 1104px) {
+    .sectionArea {
+      padding-bottom: 8em;
+      background-size: 100%;
+      background-position: left bottom; } }
+  .sectionArea .sectionTitle {
+    margin: 85px auto 30px auto; }
+    @media screen and (min-width: 1104px) {
+      .sectionArea .sectionTitle {
+        margin: 115px auto 4em auto; } }
+  .sectionArea__block01 {
+    margin-bottom: 3em; }
+    @media screen and (min-width: 1104px) {
+      .sectionArea__block01 {
+        padding: 0 120px; } }
+    .sectionArea__block01 .sideAlphabet p {
+      margin-bottom: 2em; }
+      @media screen and (min-width: 1104px) {
+        .sectionArea__block01 .sideAlphabet p {
+          margin-bottom: 4em;
+          margin-left: 20px; } }
+    .sectionArea__block01 .sideAlphabet::before {
+      background: url(../images/location/area_bg02.png) no-repeat;
+      background-size: contain; }
+    .sectionArea__block01_photo {
+      position: relative;
+      margin-bottom: 2em; }
+  .sectionArea__block02 {
+    padding: 2em 1em;
+    background: white url("../images/location/area_img03.png") no-repeat;
+    background-size: 50%;
+    background-position: right top;
+    box-shadow: 0 0 8px #bfbfbf; }
+    @media screen and (min-width: 1104px) {
+      .sectionArea__block02 {
+        margin: 0 120px;
+        padding: 2em 3em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-size: contain;
+        background-position: right top; } }
+    .sectionArea__block02__img {
+      margin: 0 auto 2em auto;
+      width: 50%; }
+      @media screen and (min-width: 1104px) {
+        .sectionArea__block02__img {
+          margin: 0;
+          width: 30%; } }
+    @media screen and (min-width: 1104px) {
+      .sectionArea__block02__text {
+        width: 70%; }
+        .sectionArea__block02__text h4 {
+          font-size: 2.2rem;
+          text-align: left;
+          margin-bottom: 0.7em; }
+        .sectionArea__block02__text p {
+          font-size: 1.5rem;
+          line-height: 1.6em; } }
+
+.sectionEducation {
+  padding-top: 2px;
+  margin-bottom: 4em; }
+  @media screen and (min-width: 1104px) {
+    .sectionEducation {
+      margin-bottom: 8em; } }
+  .sectionEducation .sectionTitle {
+    margin: 85px auto 30px auto; }
+    @media screen and (min-width: 1104px) {
+      .sectionEducation .sectionTitle {
+        margin: 115px auto 4em auto; } }
+  .sectionEducation__block01_text {
+    margin-bottom: 2em;
+    text-align: left; }
+  .sectionEducation__block01_photo {
+    margin-bottom: 2em;
+    text-align: left; }
+    .sectionEducation__block01_photo .notes_common {
+      padding-left: 2em; }
+      @media screen and (min-width: 1104px) {
+        .sectionEducation__block01_photo .notes_common {
+          padding-left: 0; } }
+  .sectionEducation__block01_photoList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 3em; }
+    @media screen and (min-width: 1104px) {
+      .sectionEducation__block01_photoList {
+        margin-bottom: 6em; } }
+    .sectionEducation__block01_photoList::after {
+      content: "";
+      display: block;
+      width: 24%; }
+    .sectionEducation__block01_photoList li {
+      margin-bottom: 0.5em;
+      width: 48%;
+      text-align: left; }
+      @media screen and (min-width: 1104px) {
+        .sectionEducation__block01_photoList li {
+          width: 24%; } }
+
+.sectionTab .tabBox .tabArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .sectionTab .tabBox .tabArea .one_tab {
+    /*margin-bottom: 4px;*/
+    margin-top: 6px;
+    width: 32%;
+    font-size: 1.2rem;
+    line-height: 1.3em; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabBox .tabArea .one_tab {
+        margin-bottom: 0;
+        width: 32%;
+        font-size: 1.7rem;
+        font-weight: 400; } }
+    .sectionTab .tabBox .tabArea .one_tab:nth-of-type(n+3) {
+      margin-bottom: 0; }
+    .sectionTab .tabBox .tabArea .one_tab a {
+      position: relative;
+      display: block;
+      text-decoration: none;
+      transition-duration: 0.3s;
+      text-align: center;
+      color: #191917; }
+      .sectionTab .tabBox .tabArea .one_tab a::after {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        display: block;
+        content: "";
+        width: 10px;
+        height: 8px;
+        background: url(../images/common/arw_btn02_blue.png) no-repeat;
+        background-size: 100% auto; }
+      .sectionTab .tabBox .tabArea .one_tab a .tab_inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        transition-duration: 0.3s;
+        background: #f2f0ee; }
+      .sectionTab .tabBox .tabArea .one_tab a.select .tab_inner {
+        color: white;
+        background: #142e77; }
+      .sectionTab .tabBox .tabArea .one_tab a.select::after {
+        background: url(../images/common/arw_btn02_white.png) no-repeat; }
+.sectionTab .tabContents {
+  border-top: 4px solid #142e77;
+  border-bottom: 4px solid #142e77;
+  background: #f2f0ee; }
+  .sectionTab .tabContents .tab_main {
+    display: none;
+    text-align: center;
+    transition-duration: 0.3s; }
+  .sectionTab .tabContents .tab_main.is_show {
+    display: block; }
+  .sectionTab .tabContents #tab01 {
+    background: #f2f0ee url("../images/location/education_bg01.png") no-repeat top right;
+    background-size: 20%; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents #tab01 {
+        background-size: 120px auto; } }
+  .sectionTab .tabContents__tab01Area {
+    max-width: none;
+    padding: 25px 15px 0 15px; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents__tab01Area {
+        max-width: 1200px;
+        margin: 0 auto; } }
+    .sectionTab .tabContents__tab01Area .sectionTitle {
+      margin: 58px auto 30px auto; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab01Area .sectionTitle {
+          margin: 90px auto 4em auto; } }
+    .sectionTab .tabContents__tab01Area .sectionAccess {
+      text-align: left; }
+      .sectionTab .tabContents__tab01Area .sectionAccess__block01 {
+        margin-bottom: 2em; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab01Area .sectionAccess__block01 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; } }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab01Area .sectionAccess__block01__text {
+            width: 55%; } }
+        .sectionTab .tabContents__tab01Area .sectionAccess__block01__text p {
+          margin-bottom: 1em; }
+          .sectionTab .tabContents__tab01Area .sectionAccess__block01__text p:last-child {
+            margin-bottom: 2em; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab01Area .sectionAccess__block01__time {
+            width: 40%; } }
+        .sectionTab .tabContents__tab01Area .sectionAccess__block01__time p {
+          margin-bottom: 2em; }
+          .sectionTab .tabContents__tab01Area .sectionAccess__block01__time p:first-child {
+            width: 70%; }
+            @media screen and (min-width: 1104px) {
+              .sectionTab .tabContents__tab01Area .sectionAccess__block01__time p:first-child {
+                width: 100%; } }
+          .sectionTab .tabContents__tab01Area .sectionAccess__block01__time p:nth-child(2) {
+            width: 90%;
+            padding-bottom: 2em;
+            border-bottom: 1px dotted #707070; }
+            @media screen and (min-width: 1104px) {
+              .sectionTab .tabContents__tab01Area .sectionAccess__block01__time p:nth-child(2) {
+                width: 100%; } }
+          .sectionTab .tabContents__tab01Area .sectionAccess__block01__time p:nth-child(3) {
+            margin-bottom: 1em;
+            width: 100%; }
+      .sectionTab .tabContents__tab01Area .sectionAccess__block02 {
+        position: relative;
+        margin-bottom: 3em; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab01Area .sectionAccess__block02 {
+            margin-bottom: 6em; } }
+        .sectionTab .tabContents__tab01Area .sectionAccess__block02 .sideAlphabet::before {
+          background: url(../images/location/access_img_routemap_bg.png) no-repeat;
+          background-size: contain; }
+        .sectionTab .tabContents__tab01Area .sectionAccess__block02__rosenWrap {
+          background: white;
+          box-shadow: 0 0 8px #bfbfbf;
+          text-align: right; }
+          @media screen and (min-width: 1104px) {
+            .sectionTab .tabContents__tab01Area .sectionAccess__block02__rosenWrap {
+              margin-left: 20px; } }
+      .sectionTab .tabContents__tab01Area .sectionAccess__block03 {
+        margin-bottom: 3em; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab01Area .sectionAccess__block03 {
+            margin-bottom: 6em; } }
+        .sectionTab .tabContents__tab01Area .sectionAccess__block03__photo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          .sectionTab .tabContents__tab01Area .sectionAccess__block03__photo_item {
+            width: 50%; }
+            @media screen and (min-width: 1104px) {
+              .sectionTab .tabContents__tab01Area .sectionAccess__block03__photo_item {
+                width: 25%; } }
+        .sectionTab .tabContents__tab01Area .sectionAccess__block03 .notes_common {
+          width: 100%;
+          text-align: right; }
+      .sectionTab .tabContents__tab01Area .sectionAccess__block04 .sideAlphabet::before {
+        background: url(../images/location/access_bg_bus01.png) no-repeat;
+        background-size: contain; }
+      .sectionTab .tabContents__tab01Area .sectionAccess__block04__Wrap {
+        padding: 2em 2em 1em 2em;
+        background: white;
+        box-shadow: 0 0 8px #bfbfbf; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab01Area .sectionAccess__block04__Wrap {
+            margin-left: 20px;
+            padding: 4em 4em 2em 4em;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; } }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab01Area .sectionAccess__block04__textBlock {
+          width: 60%; } }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab01Area .sectionAccess__block04__textBlock h4 {
+          text-align: left;
+          margin-bottom: 1em; } }
+      .sectionTab .tabContents__tab01Area .sectionAccess__block04__textBlock_item {
+        margin-bottom: 2em; }
+        .sectionTab .tabContents__tab01Area .sectionAccess__block04__textBlock_item:nth-of-type(2) {
+          width: 100%;
+          margin-bottom: 1.5em; }
+        .sectionTab .tabContents__tab01Area .sectionAccess__block04__textBlock_item:nth-of-type(3) {
+          width: 90%; }
+          @media screen and (min-width: 1104px) {
+            .sectionTab .tabContents__tab01Area .sectionAccess__block04__textBlock_item:nth-of-type(3) {
+              width: 100%; } }
+      .sectionTab .tabContents__tab01Area .sectionAccess__block04__busTimeBlock_item {
+        margin-bottom: 1em; }
+  .sectionTab .tabContents #tab02 {
+    background: #f2f0ee url("../images/location/shopping_bg01.png") no-repeat top right;
+    background-size: 20%; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents #tab02 {
+        background-size: 120px auto; } }
+  .sectionTab .tabContents__tab02Area {
+    max-width: none;
+    padding: 25px 15px 0 15px; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents__tab02Area {
+        max-width: 1200px;
+        margin: 0 auto; } }
+    .sectionTab .tabContents__tab02Area .sectionTitle {
+      margin: 58px auto 30px auto; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab02Area .sectionTitle {
+          margin: 90px auto 4em auto; } }
+    .sectionTab .tabContents__tab02Area__shopInfo {
+      margin-bottom: 2em; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab02Area__shopInfo {
+          margin-bottom: 4em; } }
+      .sectionTab .tabContents__tab02Area__shopInfo_title {
+        margin-bottom: 1em;
+        font-size: 2rem;
+        text-align: left;
+        color: #70452e; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab02Area__shopInfo_title {
+            font-size: 2.8rem; } }
+        .sectionTab .tabContents__tab02Area__shopInfo_title span {
+          font-size: 1.4rem; }
+      .sectionTab .tabContents__tab02Area__shopInfo_text {
+        margin-bottom: 1em;
+        text-align: left; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab02Area__shopInfo_text {
+            margin-bottom: 2em; } }
+    .sectionTab .tabContents__tab02Area__photoList {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-bottom: 3em; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab02Area__photoList {
+          margin-bottom: 6em; } }
+    .sectionTab .tabContents__tab02Area::after {
+      content: "";
+      display: block;
+      width: 24%; }
+    .sectionTab .tabContents__tab02Area li {
+      margin-bottom: 0.5em;
+      width: 48%;
+      text-align: left; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab02Area li {
+          width: 24%; } }
+  .sectionTab .tabContents #tab03 {
+    background: #f2f0ee url("../images/location/shopping_street_bg01.png") no-repeat top right;
+    background-size: 20%; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents #tab03 {
+        background-size: 120px auto; } }
+  .sectionTab .tabContents__tab03Area {
+    max-width: none;
+    padding: 25px 15px 0 15px; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents__tab03Area {
+        max-width: 1200px;
+        margin: 0 auto; } }
+    .sectionTab .tabContents__tab03Area .sectionTitle {
+      margin: 58px auto 30px auto; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab03Area .sectionTitle {
+          margin: 90px auto 4em auto; } }
+    .sectionTab .tabContents__tab03Area__map {
+      margin-bottom: 2em; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab03Area__map {
+          margin: 0 auto 4em auto;
+          width: 960px; } }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents__tab03Area__shoppingStreetList {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .sectionTab .tabContents__tab03Area__shoppingStreetList::after {
+          content: "";
+          display: block;
+          width: 31%; } }
+    .sectionTab .tabContents__tab03Area__shoppingStreetList__item {
+      margin-bottom: 3em; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab03Area__shoppingStreetList__item {
+          margin-bottom: 6em;
+          width: 31%; } }
+      .sectionTab .tabContents__tab03Area__shoppingStreetList__item_photo {
+        margin-bottom: 1em; }
+      .sectionTab .tabContents__tab03Area__shoppingStreetList__item_title {
+        margin-bottom: 1em;
+        font-size: 2rem;
+        color: #70452e;
+        text-align: left;
+        font-weight: 500; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab03Area__shoppingStreetList__item_title {
+            font-size: 2.1rem; } }
+      .sectionTab .tabContents__tab03Area__shoppingStreetList__item_text {
+        text-align: left; }
+  .sectionTab .tabContents #tab04 {
+    background: #f2f0ee url("../images/location/life_information_bg01.png") no-repeat top right;
+    background-size: 20%; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents #tab04 {
+        background-size: 120px auto; } }
+  .sectionTab .tabContents__tab04Area {
+    max-width: none;
+    padding: 25px 15px 0 15px; }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents__tab04Area {
+        max-width: 1200px;
+        margin: 0 auto; } }
+    .sectionTab .tabContents__tab04Area .sectionTitle {
+      margin: 58px auto 30px auto; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab04Area .sectionTitle {
+          margin: 90px auto 4em auto; } }
+    @media screen and (min-width: 1104px) {
+      .sectionTab .tabContents__tab04Area__infoList {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 3em; }
+        .sectionTab .tabContents__tab04Area__infoList::after {
+          content: "";
+          display: block;
+          width: 30%; } }
+    .sectionTab .tabContents__tab04Area__infoList__item {
+      margin-bottom: 3em; }
+      @media screen and (min-width: 1104px) {
+        .sectionTab .tabContents__tab04Area__infoList__item {
+          width: 30%; } }
+      .sectionTab .tabContents__tab04Area__infoList__item h4 {
+        position: relative;
+        margin-bottom: 1em;
+        display: flex;
+        text-align: left;
+        background: url("../images/location/life_information_bg02.png") repeat-x;
+        background-position: left 50px center;
+        /*						@include breakpoint-xl {
+        							display: flex;
+        							text-align: left;
+        							font-size: 1.7rem;
+        							background: url("../images/location/life_information_bg02.png") repeat-x;
+        							background-position: left 50px center;
+        							p {
+        								padding-right: 1em;
+        								background: $color_gray01;
+        							}
+        						}*/
+        /*						&::after {
+        							content: "";
+        							display: inline-block;
+        							position: absolute;
+        							left: 50%;
+        							bottom: -20px;
+        							width: 100px;
+        							height: 10px;
+        							-webkit-transform: translateX(-50%);
+        							transform: translateX(-50%);
+        							background: url("../images/location/life_information_bg02.png") no-repeat;
+        							background-size: 200px auto;
+        							vertical-align: middle;
+        							@include breakpoint-xl {
+        								content: none;
+        							}
+        						}*/ }
+        .sectionTab .tabContents__tab04Area__infoList__item h4 p {
+          padding-right: 1em;
+          background: #f2f0ee; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab04Area__infoList__item h4 {
+            font-size: 1.7rem; } }
+      .sectionTab .tabContents__tab04Area__infoList__item__body li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 0.4em;
+        line-height: 1.2em; }
+      .sectionTab .tabContents__tab04Area__infoList__item__body_mane {
+        font-size: 1.3rem;
+        text-align: left; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab04Area__infoList__item__body_mane {
+            font-size: 1.4rem; } }
+      .sectionTab .tabContents__tab04Area__infoList__item__body_time {
+        text-align: right;
+        width: 10em;
+        font-size: 1.2rem;
+        color: #959595; }
+        @media screen and (min-width: 1104px) {
+          .sectionTab .tabContents__tab04Area__infoList__item__body_time {
+            font-size: 1.4rem; } }
+
+.tabBox .tabArea.bottom {
+  align-items: flex-start;
+  margin-bottom: 4em; }
+  @media screen and (min-width: 1104px) {
+    .tabBox .tabArea.bottom {
+      margin-bottom: 8em; } }
+
+.sectionMap {
+  padding-top: 2px;
+  margin-bottom: 4em; }
+  .sectionMap .sectionTitle {
+    margin: 85px auto 30px auto; }
+    .sectionMap .sectionTitle h3 {
+      font-weight: 400; }
+    @media screen and (min-width: 1104px) {
+      .sectionMap .sectionTitle {
+        margin: 115px auto 4em auto; } }
+    .sectionMap .sectionTitle .heightLine::before {
+      content: "";
+      display: block;
+      flex-grow: 1;
+      background: #1f1f1f;
+      width: 1px;
+      height: 65px;
+      position: absolute;
+      left: 50%;
+      top: -350%;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-350%, 0); }
+      @media screen and (min-width: 1104px) {
+        .sectionMap .sectionTitle .heightLine::before {
+          height: 95px;
+          top: -350%;
+          -webkit-transform: translate(-65%, 0);
+          transform: translate(-350%, 0); } }
+  .sectionMap__mapBlock iframe {
+    width: 100%;
+    height: 450px; }
+    @media screen and (min-width: 1104px) {
+      .sectionMap__mapBlock iframe {
+        height: 500px; } }
+  .sectionMap__searchBlock {
+    padding: 4em 0;
+    background: url("../images/location/map_bg.png") no-repeat left top;
+    background-size: cover; }
+    .sectionMap__searchBlock h4 {
+      color: white; }
+    .sectionMap__searchBlock p {
+      margin-bottom: 2em;
+      padding: 0 2em;
+      color: white;
+      text-align: center; }
+    .sectionMap__searchBlock .searchBox {
+      margin: 0 20px;
+      padding: 1em;
+      background: white; }
+      @media screen and (min-width: 1104px) {
+        .sectionMap__searchBlock .searchBox {
+          margin: 0 auto;
+          max-width: 740px;
+          padding: 2em; } }
+      @media screen and (min-width: 1104px) {
+        .sectionMap__searchBlock .searchBox #goal {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; } }
+      @media screen and (min-width: 1104px) {
+        .sectionMap__searchBlock .searchBox #goal .searchBox__inner {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; } }
+      .sectionMap__searchBlock .searchBox #goal .searchBox__inner_title {
+        display: block;
+        margin-bottom: 1em;
+        text-align: center; }
+        @media screen and (min-width: 1104px) {
+          .sectionMap__searchBlock .searchBox #goal .searchBox__inner_title {
+            margin-bottom: 0;
+            margin-right: 1em; } }
+      .sectionMap__searchBlock .searchBox #goal .searchBox__inner_text {
+        display: block;
+        margin-bottom: 0.6em; }
+        .sectionMap__searchBlock .searchBox #goal .searchBox__inner_text input[type="text"] {
+          padding: 0.5em;
+          font-size: 1.2rem;
+          width: 90%; }
+          @media screen and (min-width: 1104px) {
+            .sectionMap__searchBlock .searchBox #goal .searchBox__inner_text input[type="text"] {
+              padding: 10px;
+              font-size: 1.3rem;
+              width: 420px; } }
+      .sectionMap__searchBlock .searchBox #goal .searchBox__inner_bt {
+        display: block;
+        text-align: center; }
+        .sectionMap__searchBlock .searchBox #goal .searchBox__inner_bt input[type="image"] {
+          width: 80px; }
+          @media screen and (min-width: 1104px) {
+            .sectionMap__searchBlock .searchBox #goal .searchBox__inner_bt input[type="image"] {
+              margin: 0;
+              width: 85px; } }
+
+.sectionHospital {
+  background: #f2f0ee; }
+  .sectionHospital .sectionWrap {
+    padding-top: 85px;
+    padding-bottom: 4em; }
+    @media screen and (min-width: 767px) {
+      .sectionHospital .sectionWrap {
+        margin-bottom: 96px;
+        padding: 115px 20px 64px 20px; } }
+  .sectionHospital__subject {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #959595; }
+    .sectionHospital__subject_title {
+      font-weight: bold;
+      color: #142e77; }
+    .sectionHospital__subject_item {
+      font-size: 1.3rem;
+      line-height: 1.5em; }
+      @media screen and (min-width: 767px) {
+        .sectionHospital__subject_item {
+          font-size: 1.4rem; } }
+  .sectionHospital .sectionTitle {
+    margin-bottom: 3em; }
+  .sectionHospital__picup {
+    margin-bottom: 4em; }
+    .sectionHospital__picup__title {
+      color: #142e77; }
+      .sectionHospital__picup__title_sub {
+        font-weight: 500; }
+      .sectionHospital__picup__title_tit {
+        text-align: left;
+        color: #142e77; }
+    .sectionHospital__picup__block01 P + P {
+      margin-top: 1em; }
+    .sectionHospital__picup__block02 {
+      margin-top: 1em; }
+      @media screen and (min-width: 767px) {
+        .sectionHospital__picup__block02 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; } }
+      @media screen and (min-width: 767px) {
+        .sectionHospital__picup__block02_photo {
+          width: 65%;
+          max-width: 718px; } }
+      .sectionHospital__picup__block02_read {
+        margin-top: 1em; }
+        @media screen and (min-width: 767px) {
+          .sectionHospital__picup__block02_read {
+            margin-top: 0;
+            width: 33%;
+            max-width: 426px; } }
+  @media screen and (min-width: 767px) {
+    .sectionHospital__listWrap {
+      margin-top: 96px;
+      margin-bottom: 64px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  .sectionHospital__list {
+    margin-top: 2em; }
+    @media screen and (min-width: 767px) {
+      .sectionHospital__list {
+        margin-top: 0;
+        width: 31.5%;
+        font-size: 1.6rem;
+        line-height: 1.5em; }
+        .sectionHospital__list:first-child {
+          margin-top: 0; } }
+    .sectionHospital__list__title {
+      padding: 0.5em 0;
+      font-size: 1.5rem;
+      background: #142e77;
+      color: white; }
+      @media screen and (min-width: 767px) {
+        .sectionHospital__list__title {
+          margin-bottom: 1em;
+          padding: 0.2em 0;
+          font-size: 1.5rem; } }
+      @media screen and (min-width: 1104px) {
+        .sectionHospital__list__title {
+          font-size: 1.8rem; } }
+    .sectionHospital__list__photo {
+      margin-top: 1em; }
+
+.sectionEducation02 {
+  padding-bottom: 0; }
+  @media screen and (min-width: 767px) {
+    .sectionEducation02 .sectionWrap {
+      padding: 0 20px 0 20px; } }
+  .sectionEducation02__subject {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #959595; }
+    .sectionEducation02__subject_title {
+      font-weight: bold;
+      color: #142e77; }
+    .sectionEducation02__subject_item {
+      font-size: 1.3rem;
+      line-height: 1.5em; }
+      @media screen and (min-width: 767px) {
+        .sectionEducation02__subject_item {
+          font-size: 1.4rem; } }
+  .sectionEducation02__listWrap {
+    padding-bottom: 0; }
+    @media screen and (min-width: 767px) {
+      .sectionEducation02__listWrap {
+        margin-top: 96px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+    @media screen and (min-width: 767px) {
+      .sectionEducation02__listWrap:last-child {
+        margin-top: 32px; } }
+  .sectionEducation02__list {
+    margin-top: 2em; }
+    @media screen and (min-width: 767px) {
+      .sectionEducation02__list {
+        margin-top: 0;
+        width: 31.5%;
+        font-size: 1.6rem;
+        line-height: 1.5em; } }
+    .sectionEducation02__list__title {
+      padding: 0.5em 0;
+      font-size: 1.5rem;
+      background: #70452e;
+      color: white; }
+      @media screen and (min-width: 767px) {
+        .sectionEducation02__list__title {
+          margin-bottom: 1em;
+          padding: 0.2em 0;
+          font-size: 1.5rem; } }
+      @media screen and (min-width: 1104px) {
+        .sectionEducation02__list__title {
+          font-size: 1.8rem; } }
+    .sectionEducation02__list__read_subtitle {
+      margin-bottom: 1em;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #70452e; }
+    .sectionEducation02__list__photo {
+      margin-top: 1em; }
+  .sectionEducation02__Title02 {
+    margin-top: 4em; }
+    .sectionEducation02__Title02 h3 {
+      color: #70452e;
+      font-size: 2rem; }
+      @media screen and (min-width: 767px) {
+        .sectionEducation02__Title02 h3 {
+          font-size: 2.8rem; } }
+
+.shopNote {
+  padding-top: 1em;
+  font-size: 1.3rem;
+  line-height: 1.5em; }
+  @media screen and (min-width: 767px) {
+    .shopNote {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 1104px) {
+    .shopNote {
+      font-size: 1.6rem; } }
+
+.infoNote {
+  padding-top: 1em;
+  font-size: 1.3rem;
+  line-height: 1.5em; }
+  @media screen and (min-width: 767px) {
+    .infoNote {
+      font-size: 1.4rem; } }

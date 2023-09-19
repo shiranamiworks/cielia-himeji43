@@ -1,0 +1,392 @@
+
+/*  modal -----------------------*/ 
+
+.iziModal{
+    max-width: 100% !important;
+    width: 100% !important;
+    max-height: 100% !important;
+    height: 100% !important;
+    padding: 70px 0;
+    box-sizing: border-box;
+    /*background-color: rgba(0,0,0,.7);*/
+    background: transparent;
+}
+    .iziModal-wrap{
+        max-width: 1200px !important;
+        max-height: 100% !important;
+        width: 95% !important;
+        height: 100% !important;
+        margin: auto;
+    }
+        .iziModal .iziModal-content,
+        .iziModal .iziModal-content .cntBox{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+        }
+            /*.iziModal .iziModal-content .cntBox .p-caption{
+                position: absolute;
+                font-size: 10px;
+                text-align: right;
+                right: 0;
+                bottom: 0;
+                padding: 3px 8px;
+            }*/
+            .iziModal .iziModal-content img{
+                /*width: 100%;*/
+                display: block;
+                /*margin: 0 auto;*/
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: auto;
+                /* height: 100%; */
+                max-height: 100%;
+            }
+            .iziModal .iziModal-content img.height{
+                /*height: 100%;*/
+                /*width: auto;*/
+            }
+            .iziModal .iziModal-content .cap{
+                color: #fff;
+                padding: 0px 8px;
+                background: rgba(0,0,0,.5);
+                z-index: 1;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-size: 10px;
+                font-family: 'Yu Mincho',Yumincho,serif;
+            }
+.iziModal-navigate{
+    z-index: 1000 !important;
+}
+.iziModal-navigate .iziModal-navigate-prev,
+.iziModal-navigate .iziModal-navigate-next{
+    bottom: auto;
+    top: 50%;
+    height: 72px;
+    width: 37px;
+    cursor: pointer;
+    padding: 0;
+    opacity: 1;
+    transition: opacity .3s ease;
+    pointer-events: all;
+    margin: 0;
+    outline: 0;
+    transform: translateY(-50%);
+}
+.iziModal-navigate .iziModal-navigate-prev{
+    left: 50px !important;
+    margin-left: 0 !important;
+    background: url(../img/index/prev.png) no-repeat center center/cover;
+}
+.iziModal-navigate .iziModal-navigate-next{
+    right: 50px !important;
+    margin-right: 0 !important;
+    background: url(../img/index/next.png) no-repeat center center/cover;
+}
+.iziModal-overlay {
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    /*display: none;*/
+    background: #ccc;
+}
+.iziModal .closeBtnBox{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: 0 auto;
+    z-index: 1000;
+    /*max-width: 1200px;*/
+    width: 95%;
+}
+.iziModal .closeBtn{
+    /*position: absolute;
+    right: 33px;
+    top: 37px;*/
+    display: block;
+    width: 42px;
+    /*z-index: 1000;*/
+    margin-left: auto;
+}
+
+@media screen and (max-width:768px) {
+    .galleryBox{
+        margin-bottom: 70px;
+        margin-top: 30px;
+    }
+        .galleryBox h4{
+    font-size: 1.5rem;
+}
+        }
+            .galleryBox h4 span{
+                width: 100%;
+            }
+                .galleryBox h4 span:after{
+                    height: 1px;
+                    display: none;
+                }
+        .galleryBox h5{
+            margin-bottom: 0.3em;
+            font-size: 3rem;
+            color: #70452e;
+            text-align: center;
+        }
+        .galleryBox .desc{
+            font-size: 16px;
+            line-height: 1.625;
+            margin-bottom: 25px;
+        }
+        .galleryBox .note{
+            font-size: 12px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+            /*.galleryBox .galleryList a{
+                width: 48.29545%;
+            }
+            .galleryBox .galleryList a:nth-of-type(n + 3){
+                margin-top: 3.4091%;
+            }*/
+    .iziModal {
+        padding: 90px 0;
+    }
+        .iziModal-wrap{
+            width: 90% !important;
+        }
+            .iziModal-navigate .iziModal-navigate-prev,
+            .iziModal-navigate .iziModal-navigate-next{
+                height: 54px;
+                width: 28px;
+            }
+            .iziModal-navigate .iziModal-navigate-prev{
+                left: 10px !important;
+            }
+            .iziModal-navigate .iziModal-navigate-next{
+                right: 10px !important;
+            }
+            .iziModal .closeBtnBox {
+                top: 30px;
+                width: 90%;
+            }
+                .iziModal .closeBtn {
+                    width: 32px;
+                }
+}
+
+
+
+
+
+
+
+/*  #underLink
+--------------------------------------------------*/
+    .bnrSlideWrap{
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+    }
+        .bnrSlideWrap .bnrSlider {
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: visible;
+            position: static;
+        }
+        .bnrSlider .slick-list {
+            overflow: visible;
+        }
+        .bnrSlider .bnrSliCnt {
+            max-width: 100%;
+            position: relative;
+            outline: 0;
+            margin: 0 10px;
+            opacity: .6;
+            transition: .4s;
+        }
+        .bnrSlider .bnrSliCnt:hover,
+        .bnrSlider .bnrSliCnt.slick-current {
+            opacity: 1;
+        }
+
+        /* slide dots */
+        .navigation .slick-dots{
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin-top: 0;
+            font-size: 0;
+        }
+        .navigation .slick-dots li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 0;
+        }
+        .navigation .slick-dots li + li{
+            margin-left: 10px;
+        }
+        .navigation .slick-dots li button {
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            padding: 0;
+            /*border-radius: 0;*/
+            border: solid #4f8787 1px;
+            background-color: transparent;
+            transition: .3s;
+            color: #fff;
+        }
+        .navigation .slick-dots li button:hover,
+        .navigation .slick-dots li.slick-active button{
+            background-color: #4f8787;
+            color:  #4f8787;
+        }
+
+
+        /* slide arrow */
+        /*.navigation .slick-prev, 
+        .navigation .slick-next{
+            width: 60px;
+            height: 120px;
+            z-index: 1;
+            transition: .3s;
+        }
+        .navigation .slick-prev{
+            left: 0;
+            background: url(../img/home/pc/underprev.png) no-repeat center center/cover;
+        }
+        .navigation .slick-next{
+            right: 0;
+            background: url(../img/home/pc/undernext.png) no-repeat center center/cover;
+        }
+        .navigation .slick-prev:hover,
+        .navigation .slick-next:hover{
+            opacity: .7;
+        }
+        .navigation .slick-prev:before, 
+        .navigation .slick-next:before{
+            display: none;
+        }*/
+        .bnrSlideWrap .navigation {
+            position: relative;
+            display: inline-block;
+            padding: 0 50px;
+        }
+            .navigation .slick-prev, 
+            .navigation .slick-next {
+              position: absolute;
+              bottom: -3px;
+              display: block;
+              width: 20px;
+              height: 20px;
+              padding: 0;
+              cursor: pointer;
+              font-size: 0;
+              line-height: 0;
+              color: transparent;
+              border: none;
+              outline: none;
+              background: transparent;
+            }
+            .navigation .slick-prev{
+                left: 0;
+                bottom: 10px;
+            }
+            .navigation .slick-next{
+                right: 0;
+                bottom: 10px;
+            }
+            .navigation .slick-prev:before, 
+            .navigation .slick-next:before{
+                content: "";
+                font-size: 0;
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-top: solid 2px rgba(255,255,255,0.3);
+                border-right: solid 2px rgba(255,255,255,0.3);
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 1 !important;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                color: inherit;
+            }
+            .navigation .slick-prev:before, 
+            .navigation .slick-next:before{
+                border-top: solid 2px rgba(2, 24, 83,0.3);
+                border-right: solid 2px rgba(2, 24, 83,0.3);
+            }
+            .navigation .slick-prev:before{
+                transform: translateX(3px) rotate(-135deg);
+            }
+            .navigation .slick-next:before{
+                transform: translateX(-3px) rotate(45deg);
+            }
+            .navigation .slick-prev:hover,
+            .navigation .slick-next:hover{
+                background:rgba(255,255,255,0.1);   
+            }
+            .navigation .slick-prev:hover:before{
+                left:0;
+            }
+            .navigation .slick-next:hover:before{
+                right: 0;
+            }
+
+
+@media screen and (max-width: 768px){
+    #underLink{
+        padding: 40px 0 85px;
+    }
+        #underLink h4{
+            font-size: 20px;
+            line-height: 1.9;
+            padding-bottom: 40px;
+        }
+            .bnrSlideWrap .bnrSlider {
+                max-width: 284px;
+                margin-bottom: 15px;
+            }
+            .bnrSlider .bnrSliCnt {
+                margin: 0 2px;
+            }
+
+            /* slide dots */
+            .navigation .slick-dots{
+                bottom: -35px;
+            }
+            .navigation .slick-dots li {
+                width: 10px;
+                height: 10px;
+            }
+            .navigation .slick-dots li + li{
+                margin-left: 5px;
+            }
+            .navigation .slick-dots li button {
+                width: 10px;
+                height: 10px;
+            }
+            
+}
+

@@ -1,0 +1,848 @@
+@charset "UTF-8";
+/* brake point */
+/* font color */
+/* =========================================================
+	hack IE
+========================================================== */
+/* =========================================================
+	.alignfull  & .alignwide
+========================================================== */
+.alignfull {
+  width: 100vw !important;
+  margin-left: calc( 50% - 50vw );
+  margin-right: calc( 50% - 50vw );
+  max-width: none;
+}
+
+@media screen and (max-width: 1103px) {
+  .alignfull_sp {
+    padding: 0;
+    width: 100vw !important;
+    margin-left: calc( 50% - 50vw );
+    margin-right: calc( 50% - 50vw );
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1104px) {
+  .alignwide {
+    width: 1104px !important;
+    margin-left: calc( 50% - 1104px / 2 ) !important;
+  }
+}
+
+/* =========================================================
+	.cap
+========================================================== */
+span.cap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 1%;
+  color: #bfbfbf;
+  font-size: 1.1rem;
+  background: rgba(30, 30, 30, 0.7);
+}
+@media screen and (min-width: 1104px) {
+  span.cap {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
+
+.min-note {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 1104px) {
+  .min-note {
+    font-size: 0.8rem;
+  }
+}
+
+span.minuteWalkTimes {
+  font-size: 0.8em;
+}
+
+/* =========================================================
+	.sectionTitle
+========================================================== */
+.sectionTitle {
+  position: relative;
+}
+.sectionTitle .sectionTitle__sub {
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+@media screen and (min-width: 1104px) {
+  .sectionTitle .sectionTitle__sub {
+    font-size: 2rem;
+    margin-bottom: 2em;
+  }
+}
+.sectionTitle h3 {
+  color: #142e77;
+  font-size: 2.5rem;
+  line-height: 1.5em;
+  text-align: center;
+}
+@media screen and (min-width: 1104px) {
+  .sectionTitle h3 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+  }
+}
+
+.heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: #1f1f1f;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: -85px;
+}
+@media screen and (min-width: 1104px) {
+  .heightLine::before {
+    height: 95px;
+    top: -115px;
+  }
+}
+
+h4 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: #70452e;
+  text-align: center;
+}
+@media screen and (min-width: 1104px) {
+  h4 {
+    margin-bottom: 2em;
+    font-size: 2.8rem;
+    line-height: 1.8em;
+    font-weight: 600;
+  }
+}
+
+.sideAlphabet {
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sideAlphabet::before {
+  content: '';
+  width: 5%;
+  max-width: 15px;
+  min-width: 10px;
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* =========================================================
+	.gotoBT
+========================================================== */
+.gotoBT a {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  background: #142e77;
+  color: #FFF;
+  line-height: 1;
+  text-align: center;
+  transition: .3s;
+}
+@media screen and (min-width: 1104px) {
+  .gotoBT a {
+    max-width: 485px;
+    padding: 22px 0;
+    font-size: 1.8rem;
+  }
+}
+
+.gotoBT a:hover {
+  opacity: .7;
+}
+
+.gotoBT a::after {
+  right: 12px;
+  width: 9px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  background: url(../images/common/arw_btn.png) no-repeat;
+  background-size: 100% auto;
+  transition: .3s;
+}
+@media screen and (min-width: 1104px) {
+  .gotoBT a::after {
+    right: 20px;
+  }
+}
+
+.gotoBT a:hover::after {
+  right: 8px;
+}
+@media screen and (min-width: 1104px) {
+  .gotoBT a:hover::after {
+    right: 10px;
+  }
+}
+
+.gotoBT.white a {
+  background: white;
+  color: #191917;
+}
+
+.gotoBT.white a::after {
+  background: url(../images/common/arw_btn_black.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.gotoBT_comingsoon span {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 1px solid white;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  opacity: .8;
+}
+@media screen and (min-width: 1104px) {
+  .gotoBT_comingsoon span {
+    max-width: 485px;
+    padding: 22px 0;
+    font-size: 1.8rem;
+  }
+}
+
+.gotoBT_comingsoon.op04 span {
+  opacity: .4;
+}
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+  background: url(../images/member/salon/bg_ttl.png) no-repeat;
+  background-size: cover;
+  background-position: 40% bottom;
+}
+@media screen and (min-width: 1104px) {
+  #Content .page-ttlBg {
+    background-position: center bottom;
+  }
+}
+
+.salonH2Title {
+  padding-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  .salonH2Title {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #salon {
+    font-size: 1.6rem;
+    line-height: 1.8em;
+  }
+}
+@media screen and (min-width: 1104px) {
+  #salon {
+    font-size: 1.8rem;
+    line-height: 1.8em;
+  }
+}
+
+#salon .sectionSalonIntro .sectionTitle {
+  position: relative;
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonIntro .sectionTitle {
+    margin-bottom: 46px;
+  }
+}
+#salon .sectionSalonIntro .sectionTitle h3 {
+  padding-top: 65px;
+  color: #142e77;
+  font-size: 2.2rem;
+  line-height: 1.5em;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonIntro .sectionTitle h3 {
+    padding-top: 95px;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.7em;
+  }
+}
+#salon .sectionSalonIntro .heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: #1f1f1f;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonIntro .heightLine::before {
+    height: 95px;
+    top: 0px;
+  }
+}
+#salon .sectionSalonIntro .sectionWrap {
+  position: relative;
+  background: white;
+  margin: 0 20px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonIntro .sectionWrap {
+    text-align: center;
+    padding: 0 64px 10px 64px;
+  }
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionSalonIntro .sectionWrap {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+  }
+}
+#salon .sectionSalonIntro__list {
+  margin-top: 2em;
+  padding: 1em;
+  background: #f2f0ee;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonIntro__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 3em;
+  }
+}
+#salon .sectionSalonIntro__list dt {
+  padding: .5em;
+  text-align: center;
+  color: white;
+  background: #142e77;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonIntro__list dt {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2em .5em;
+  }
+}
+#salon .sectionSalonIntro__list dd {
+  text-align: left;
+  margin-top: 1em;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonIntro__list dd {
+    margin-top: 0;
+    width: 72%;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonIntro__list dd ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 767px) {
+  #salon .sectionSalonIntro__list dd ul li:nth-child(odd) {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 767px) {
+  #salon .sectionSalonIntro__list dd ul li:nth-child(even) {
+    width: 55%;
+  }
+}
+
+#salon .sectionSalonFlow {
+  border-top: 1px solid white;
+  margin-top: 4em;
+  padding-bottom: 4em;
+  background: url("../images/member/salon/salonFlow_bg01.png") center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow {
+    padding-bottom: 8em;
+  }
+}
+#salon .sectionSalonFlow .sectionTitle {
+  position: relative;
+  margin: 85px auto 30px auto;
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionSalonFlow .sectionTitle {
+    margin: 115px auto 4em auto;
+  }
+}
+#salon .sectionSalonFlow .sectionTitle .sectionTitle__sub {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionSalonFlow .sectionTitle .sectionTitle__sub {
+    font-size: 2rem;
+    margin-bottom: 2em;
+  }
+}
+#salon .sectionSalonFlow .sectionTitle h3 {
+  color: #142e77;
+  font-size: 2.2rem;
+  line-height: 1.5em;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow .sectionTitle h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+  }
+}
+#salon .sectionSalonFlow .heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: #1f1f1f;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: -85px;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow .heightLine::before {
+    height: 95px;
+    top: -115px;
+  }
+}
+#salon .sectionSalonFlow .sectionWrap {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+#salon .sectionSalonFlow__topRead {
+  text-align: center;
+}
+#salon .sectionSalonFlow__flowItemBlock {
+  margin-top: 4em;
+}
+#salon .sectionSalonFlow__flowItemBlock.step01 {
+  margin-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow__flowItemBlock.step01 {
+    margin-top: 4em;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow__flowItemBlock {
+    margin-top: 8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow__flowItemBlock__photoBlock {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionSalonFlow__flowItemBlock__photoBlock {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow__flowItemBlock__readBlock {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionSalonFlow__flowItemBlock__readBlock {
+    width: 40%;
+  }
+}
+#salon .sectionSalonFlow__flowItemBlock__readBlock__title {
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-align: left;
+  color: #142e77;
+}
+#salon .sectionSalonFlow__flowItemBlock__readBlock__title__num {
+  border-bottom: 1px solid #142e77;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow__flowItemBlock__readBlock__title__num {
+    padding-left: 10%;
+  }
+}
+#salon .sectionSalonFlow__flowItemBlock__readBlock__title__num em {
+  padding-left: .2em;
+  font-style: normal;
+  font-size: 4rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow__flowItemBlock__readBlock__title__num em {
+    font-size: 8rem;
+  }
+}
+#salon .sectionSalonFlow__flowItemBlock__readBlock__title__text {
+  margin-top: .5em;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow__flowItemBlock__readBlock__title__text {
+    padding-left: 10%;
+    font-size: 3.4rem;
+  }
+}
+#salon .sectionSalonFlow__flowItemBlock__readBlock__title__text span {
+  font-size: 1.5rem;
+  color: #707070;
+}
+#salon .sectionSalonFlow__flowItemBlock__readBlock__text {
+  margin-top: .5em;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow__flowItemBlock__readBlock__text {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow .sectionSalonFlow__flowItemBlock.right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow .sectionSalonFlow__flowItemBlock.right .sectionSalonFlow__flowItemBlock__readBlock__title__num {
+    padding-left: 0;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow .sectionSalonFlow__flowItemBlock.right .sectionSalonFlow__flowItemBlock__readBlock__title__text {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionSalonFlow .sectionSalonFlow__flowItemBlock.right .sectionSalonFlow__flowItemBlock__readBlock__text {
+    padding-left: 0;
+    padding-right: 10%;
+  }
+}
+
+#salon .sectionModelroom__Intro {
+  position: relative;
+  z-index: -1;
+  border-top: 1px solid white;
+  margin-top: 4em;
+  background: url("../images/member/salon/modelroom_bg01.png") center center no-repeat;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom__Intro {
+    background: url("../images/member/salon/modelroom_bg01.png") center top no-repeat;
+    padding-bottom: 8em;
+  }
+}
+#salon .sectionModelroom__Intro .sectionTitle {
+  position: relative;
+  margin: 85px auto 30px auto;
+  color: white;
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionModelroom__Intro .sectionTitle {
+    margin: 115px auto 4em auto;
+  }
+}
+#salon .sectionModelroom__Intro .sectionTitle .sectionTitle__sub {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1f1f1f;
+  color: white;
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionModelroom__Intro .sectionTitle .sectionTitle__sub {
+    font-size: 2rem;
+    margin-bottom: 2em;
+  }
+}
+#salon .sectionModelroom__Intro .sectionTitle h3 {
+  color: white;
+  font-size: 2.2rem;
+  line-height: 1.5em;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom__Intro .sectionTitle h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+  }
+}
+#salon .sectionModelroom__Intro .heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: white;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: -85px;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom__Intro .heightLine::before {
+    height: 95px;
+    top: -115px;
+  }
+}
+#salon .sectionModelroom__Intro .sectionModelroom__topRead {
+  margin: auto;
+  padding-bottom: 8em;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom__Intro .sectionModelroom__topRead {
+    padding-bottom: 4em;
+  }
+}
+#salon .sectionModelroom .sectionWrap {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  margin-top: -5em;
+  padding-top: 5%;
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom .sectionWrap {
+    margin-top: -6.5em;
+    padding: 2em;
+  }
+}
+#salon .sectionModelroom__flowItemBlock {
+  margin-top: 4em;
+}
+#salon .sectionModelroom__flowItemBlock.step01 {
+  margin-top: 0;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom__flowItemBlock {
+    margin-top: 6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom__flowItemBlock__photoBlock {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionModelroom__flowItemBlock__photoBlock {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom__flowItemBlock__readBlock {
+    padding-left: 4%;
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionModelroom__flowItemBlock__readBlock {
+    width: 40%;
+    padding-right: 7%;
+  }
+}
+#salon .sectionModelroom__flowItemBlock__readBlock__title {
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-align: left;
+  color: #70452e;
+}
+#salon .sectionModelroom__flowItemBlock__readBlock__title__text {
+  font-size: 2.5rem;
+}
+#salon .sectionModelroom__flowItemBlock__readBlock__title__text span {
+  font-size: 1.5rem;
+  color: #707070;
+}
+#salon .sectionModelroom__flowItemBlock__readBlock__text {
+  margin-top: .5em;
+}
+
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom .sectionModelroom__flowItemBlock.right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionModelroom .sectionModelroom__flowItemBlock.right .sectionModelroom__flowItemBlock__readBlock {
+    padding-left: 0;
+    padding-right: 4%;
+  }
+}
+@media screen and (min-width: 1104px) {
+  #salon .sectionModelroom .sectionModelroom__flowItemBlock.right .sectionModelroom__flowItemBlock__readBlock {
+    padding-right: 4%;
+    padding-left: 7%;
+  }
+}
+
+#salon .sectionPlan {
+  position: relative;
+  margin-top: 5em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background: #f2f0ee;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionPlan {
+    margin-top: 8em;
+    padding-top: 8em;
+  }
+}
+#salon .sectionPlan::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  font-family: 'EB Garamond', serif;
+  content: 'MODELROOMPLAN';
+  font-size: 10vw;
+  line-height: .8em;
+  color: rgba(191, 191, 191, 0.3);
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionPlan::before {
+    font-size: 8vw;
+    line-height: .6em;
+  }
+}
+#salon .sectionPlan .sectionWrap {
+  margin: auto;
+  padding: 5% 1em;
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionPlan .sectionWrap {
+    padding: 3em;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionPlan__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionPlan__inner__readBlock {
+    width: 45%;
+  }
+}
+#salon .sectionPlan__inner__readBlock__spec {
+  margin-top: 1.5em;
+  text-align: left;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionPlan__inner__readBlock__spec {
+    margin-top: 3em;
+  }
+}
+#salon .sectionPlan__inner__readBlock__spec img {
+  width: 90%;
+  max-width: 375px;
+}
+#salon .sectionPlan__inner__madoriBlock {
+  margin-top: 2em;
+}
+@media screen and (min-width: 767px) {
+  #salon .sectionPlan__inner__madoriBlock {
+    margin-top: 0;
+    width: 50%;
+  }
+}

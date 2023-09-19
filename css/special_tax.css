@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* brake point */
+/* font color */
+/* =========================================================
+	PC/SP
+========================================================== */
+
+
+
+/* =========================================================
+	.alignfull  & .alignwide
+========================================================== */
+.alignfull {
+  width: 100vw !important;
+  margin-left: calc( 50% - 50vw );
+  margin-right: calc( 50% - 50vw );
+  max-width: none; }
+
+@media screen and (max-width: 1103px) {
+  .alignfull_sp {
+    padding: 0;
+    width: 100vw !important;
+    margin-left: calc( 50% - 50vw );
+    margin-right: calc( 50% - 50vw );
+    max-width: none; } }
+
+@media screen and (min-width: 1104px) {
+  .alignwide {
+    width: 1104px !important;
+    margin-left: calc( 50% - 1104px / 2 ) !important; } }
+
+/* =========================================================
+	.cap
+========================================================== */
+span.cap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 1%;
+  color: #bfbfbf;
+  font-size: 1.1rem;
+  background: rgba(30, 30, 30, 0.7); }
+  @media screen and (min-width: 1104px) {
+    span.cap {
+      font-size: 1.4rem;
+      line-height: 1.6rem; } }
+
+.min-note {
+  font-size: 1.2rem; }
+  @media screen and (min-width: 1104px) {
+    .min-note {
+      font-size: 0.8rem; } }
+
+span.minuteWalkTimes {
+  font-size: 0.8em; }
+
+/* =========================================================
+	.sectionTitle
+========================================================== */
+.sectionTitle {
+  position: relative;
+  margin-top: 80px;
+}
+  .sectionTitle .sectionTitle__sub {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1f1f1f; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle .sectionTitle__sub {
+        font-size: 2rem;
+        margin-bottom: 2em; } }
+
+  .sectionTitle h3 {
+    color: #142e77;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    text-align: center; }
+
+    @media screen and (min-width: 1104px) {
+      .sectionTitle h3 {
+        font-size: 3.0rem;
+        font-weight: 600;
+        line-height: 1.7em;
+        letter-spacing: 0.1em; } }
+
+  .sectionTitle .title{
+    width: 90%;
+    text-align: center;
+    margin: 30px auto 0;
+  }
+
+
+h4 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: #70452e;
+  text-align: center; }
+  @media screen and (min-width: 1104px) {
+    h4 {
+      margin-bottom: 2em;
+      font-size: 2.8rem;
+      line-height: 1.8em;
+      font-weight: 600; } }
+
+.sideAlphabet {
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .sideAlphabet::before {
+    content: '';
+    width: 5%;
+    max-width: 15px;
+    min-width: 10px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle; }
+
+
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+  background: url(../images/special/tax/tax_bg_ttl.png) no-repeat center center;
+  background-size: cover; }
+
+#history .photo {
+  position: relative; }
+
+#Content .page-ttl h2 strong{
+  line-height: 1.5;
+}
+
+#Content .page-ttl {
+  position: relative;
+  height: 424px;
+}
+
+@media screen and (max-width: 768px){
+#Content .page-ttl {
+    position: relative;
+    height: 180px;
+}
+}
+
+#Content .page-ttl h2 span {
+  top: 134px;
+}
+
+/* =========================================================
+  .cont
+========================================================== */
+
+.cont1{
+  width: 90%;
+  max-width: 1080px;
+  margin: 40px auto 0;
+}
+
+.cont1 .graf{
+  width: 95%;
+  max-width: 1023px;
+  margin: 0 auto;
+}
+
+.cont1 .sup h4{
+  color: #fff;
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+.cont1 .sup{
+  color: #fff;
+  background-color: #70452e;
+  margin: 40px auto 0;
+  padding: 5% 10%;
+}
+
+.cont2, .cont3, .cont4{
+  width: 90%;
+  max-width: 1080px;
+  margin: 80px auto 0;
+}
+
+

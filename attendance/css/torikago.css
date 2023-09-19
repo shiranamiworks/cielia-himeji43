@@ -1,0 +1,333 @@
+/*  charset ==================================================== */
+@charset "utf-8";
+
+/* フォント */
+body{
+}
+a{
+  text-decoration: none;
+}
+
+#torikagoSp{
+    width:90%;
+	max-width: 740px;
+    margin:0 auto;
+}
+
+.main-title{
+ padding-bottom: 50px;
+ text-align: center;
+ display: block;
+ font-size: 20px;
+ line-height: 1.6;
+ letter-spacing: 4px;
+}
+
+@media screen and (max-width: 768px){
+.main-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+}
+
+
+/* 資金計算シミュレーション凡例 */
+.hanrei{
+  width:90%;
+  margin:5px auto 0;
+  text-align: center;
+}
+.hanrei .sikin::before {
+  content: "";
+  background: url(../../sys/setting/img/icon_simu.png) center center no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.searchTag-container .caption{
+  margin:10px auto 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* =========================================================
+
+鳥かご
+
+========================================================== */
+
+#torikago {
+  width: 100%;
+  margin: 52px auto 0;
+  table-layout: fixed;
+}
+
+#torikago table {
+  width: 100%;
+  margin: 40px auto;
+}
+#torikago td {
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #FFF;
+  box-sizing: border-box;
+}
+#torikago td a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 5px;
+  color: #fff;
+  background-color: #142e77;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#torikago td a:hover {
+  opacity: 0.85;
+}
+#torikago p {
+  line-height: 1.2em !important;
+  padding-top: 4px !important;
+  margin: 0;
+}
+#torikago .td-con a {
+  font-size: 1.3rem !important;
+}
+#torikago .price {
+  font-size: 1.6rem !important;
+}
+
+/* 階層　*/
+#torikago .floor {
+  width: 8%;
+  background: #000;
+  text-align: center;
+  vertical-align: bottom;
+  line-height: 50px;
+}
+
+/* 共用部　*/
+#torikago .public {
+  line-height: 57px;
+  font-size: 12px;
+  line-height: 1.1em;
+  color: #000;
+  vertical-align: middle;
+  background-color: #e6e6e6;
+}
+
+/* 棟区分け　*/
+#torikago .pdl {
+  border-right: 5px solid #fff;
+}
+
+.captionBottom {
+    margin: 10px 0 0 8%;
+    font-size: 80%;
+	line-height: 1.4;
+}
+
+
+/**********************************************
+
+色変更
+
+**********************************************/
+
+/* 次期分譲 */
+#torikago td.jiki {
+  background: #efefef;
+}
+#torikago td.jiki a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 35px;
+  color: #191717;
+  background-color: #c1c5d0;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* 契約済み */
+#torikago td.keiyaku {
+  color: #FFF !important;
+  background: #bebfba;
+}
+
+/* 非分譲　*/
+#torikago .hibai {
+  background: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 21px;
+}
+
+/* 販売価格 */
+#torikago .price {
+  line-height: 1em;
+  font-size: 120%;
+  padding-top: 9px;
+  padding-bottom: 5px;
+}
+
+/* ブランク */
+#torikago .blank {
+  background: none;
+}
+
+/* 資金計算ボタン */
+#torikago td.has-simu-btn .td-con {
+  position: relative;
+}
+#torikago td.has-simu-btn a,
+#torikago td.has-simu-btn .td-inner {
+  padding-bottom: 35px;
+/*  padding: 20px 0 0 0;*/
+}
+#torikago .btn-simulation button {
+  border: none;
+  padding: 0;
+  text-align: center;
+  background:none;
+}
+#torikago td.has-simu-btn .btn-simulation {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 50%;
+}
+#torikago .btn-furniture {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 50%;
+}
+#torikago td.has-simu-btn .btn-furniture a {
+  padding: 1px 0;
+  font-size: 11px !important;
+  text-align: center;
+  color: #666;
+  background: none;
+  text-decoration: none;
+}
+
+
+
+/**********************************************
+
+間取り詳細 
+
+**********************************************/
+
+.image-container {
+    max-width: 730px;
+    margin:0 auto;
+}
+.image-container p{
+  display: none;
+}
+.image-container p.opened{
+  display: block;
+}
+
+/* タブ切り替え */
+.tab-list {
+  max-width: 730px;
+  margin:0 auto;
+  padding: 30px 20px 0;
+  overflow: hidden;
+  list-style: none;
+}
+.tab-list li {
+	 width:19%;
+  max-width: 200px;
+  margin-left:1.25%;
+  background:#8a8685;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+  cursor: pointer;
+  border:none;
+}
+.tab-list li:first-child {
+ margin-left:0;
+}
+
+
+@media screen and (max-width:768px) {
+.tab-list li{
+	width:32%;
+ max-width: 100%;
+ margin:2% 0 0 2%;
+}
+.tab-list li:nth-child(4){
+ margin-left:0;
+}
+.image-container img{
+  max-width: 100%;
+  width:100%;
+}
+}
+
+@media screen and (max-width:468px) {
+.tab-list li{
+	width:48%;
+ max-width: 100%;
+ margin:2% 0 0 2%;
+  padding: 0;
+}
+.tab-list li:nth-child(1),
+.tab-list li:nth-child(3),
+.tab-list li:nth-child(5){
+ margin-left:0;
+}
+.tab-list li:nth-child(4){
+ margin-left:2%;
+}
+.image-container img{
+  max-width: 100%;
+  width:100%;
+}
+}
+
+
+
+/**********************************************
+
+オリジナル
+
+**********************************************/
+
+.tab-list li a {
+    padding: 10px 0;
+    color: #1E320E;
+}
+.tab-list li a:hover {
+    text-decoration: none;
+    opacity: 0.85;
+}
+.tab-list li a:visited {
+    color:#fff;
+}
+.tab-list li a:hover {
+    background: #756e6b;
+}
+.tab-list li.active a {
+    background: #142e77;
+    color:#fff;
+}
+
+/* スマホ表示 */
+@media screen and (max-width:768px) {
+}
+
+@media screen and (max-width:468px) {
+
+}

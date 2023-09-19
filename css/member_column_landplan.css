@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/* brake point */
+/* font color */
+/* =========================================================
+	hack IE
+========================================================== */
+/* =========================================================
+	.alignfull  & .alignwide
+========================================================== */
+.alignfull {
+  width: 100vw !important;
+  margin-left: calc( 50% - 50vw );
+  margin-right: calc( 50% - 50vw );
+  max-width: none; }
+
+@media screen and (max-width: 1103px) {
+  .alignfull_sp {
+    padding: 0;
+    width: 100vw !important;
+    margin-left: calc( 50% - 50vw );
+    margin-right: calc( 50% - 50vw );
+    max-width: none; } }
+
+@media screen and (min-width: 1104px) {
+  .alignwide {
+    width: 1104px !important;
+    margin-left: calc( 50% - 1104px / 2 ) !important; } }
+
+
+/* =========================================================
+	.sectionTitle
+========================================================== */
+.sectionTitle {
+  position: relative; }
+  .sectionTitle .sectionTitle__sub {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1f1f1f; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle .sectionTitle__sub {
+        font-size: 2rem;
+        margin-bottom: 2em; } }
+  .sectionTitle h3 {
+    color: #142e77;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    text-align: center; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle h3 {
+        font-size: 3.8rem;
+        font-weight: 600;
+        line-height: 1.7em;
+        letter-spacing: 0.1em; } }
+
+.heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: #1f1f1f;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: -85px; }
+  @media screen and (min-width: 1104px) {
+    .heightLine::before {
+      height: 95px;
+      top: -115px; } }
+
+
+.sideAlphabet {
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .sideAlphabet::before {
+    content: '';
+    width: 5%;
+    max-width: 15px;
+    min-width: 10px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle; }
+
+/* =========================================================
+	.gotoBT
+========================================================== */
+.gotoBT a {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  background: #142e77;
+  color: #FFF;
+  line-height: 1;
+  text-align: center;
+  transition: .3s; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a {
+      max-width: 485px;
+      padding: 22px 0;
+      font-size: 1.8rem; } }
+
+.gotoBT a:hover {
+  opacity: .7; }
+
+.gotoBT a::after {
+  right: 12px;
+  width: 9px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  background: url(../images/common/arw_btn.png) no-repeat;
+  background-size: 100% auto;
+  transition: .3s; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a::after {
+      right: 20px; } }
+
+.gotoBT a:hover::after {
+  right: 8px; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a:hover::after {
+      right: 10px; } }
+
+.gotoBT.white a {
+  background: white;
+  color: #191917; }
+
+.gotoBT.white a::after {
+  background: url(../images/common/arw_btn_black.png) no-repeat;
+  background-size: 100% auto; }
+
+.gotoBT_comingsoon span {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 1px solid white;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  opacity: .8; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT_comingsoon span {
+      max-width: 485px;
+      padding: 22px 0;
+      font-size: 1.8rem; } }
+
+.gotoBT_comingsoon.op04 span {
+  opacity: .4; }
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+  margin-bottom: 2em;
+  background: url(../images/member/column_landplan/bg_ttl.png) no-repeat;
+  background-size: cover;
+  background-position: 40% bottom; }
+  @media screen and (min-width: 1104px) {
+    #Content .page-ttlBg {
+      margin-bottom: 7em;
+      background-position: center bottom; } }
+
+
+
+
+h3 {
+  margin-bottom: 2em;
+  text-align: center;
+  color: #142e77;
+  font-size: 2rem;
+  line-height: 1.5em; }
+  @media screen and (min-width: 1104px) {
+    h3 {
+      margin-bottom: 4em;
+      font-size: 2.8rem;
+      line-height: 2em; } }
+
+/* =========================================================
+  .plan
+========================================================== */
+
+.plan{
+  width: 1200px;
+  margin: 100px auto 0;
+}
+
+.plan .plan_img{
+  margin: 0 5% 0 -20px;
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.plan .plan_text{
+  width: 47%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.plan .plan_text h4{
+  text-align: left;
+  font-size: 24px;
+  color: #70452e;
+  line-height: 1.8em;
+  padding-left: 20px;
+  border-left: 1px solid #70452e;
+  font-weight: normal;
+}
+
+.plan .plan_text p{
+  font-size: 16px;
+  line-height: 2;
+  margin-top: 30px;
+}
+
+.plan .plan_text img{
+  margin-top: 50px;
+}
+
+  @media screen and (max-width: 1104px) {
+    .plan{
+      width: 90%;
+      margin: 45px auto 0;
+    }
+
+    .plan .plan_img{
+      margin: 60px auto;
+      width: 100%;
+      max-width: 664px;
+      display: block;
+    }
+
+    .plan .plan_text{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 664px;
+      display: block;
+    }
+
+    .plan .plan_text h4{
+      font-size: 1em;
+      line-height: 1.8;
+      padding-left: 20px;
+      border-left: 1px solid #70452e;
+
+    }
+
+    .plan .plan_text p{
+      font-size: 0.7em;
+      margin-top: 15px;
+    }
+
+    .plan .plan_text img{
+      margin-top: 20px;
+    }
+
+
+    }
+
+
+/* =========================================================
+  .garden
+========================================================== */
+
+#garden{
+  width: 1200px;
+  margin: 100px auto 0;
+}
+
+#garden .garden_title{
+  width: 960px;
+  margin: 0 auto;
+}
+
+#garden .garden_title h4{
+  font-size: 24px;
+  color: #70452e;
+  line-height: 1.8em;
+  padding-left: 20px;
+  border-left: 1px solid #70452e;
+  z-index: 1000;
+  height: 120px;
+  margin-left: 70px;
+  position: absolute;
+  font-weight: normal;
+}
+
+#garden .garden_title img{
+  z-index: 50;
+  margin-top: 75px; 
+  position: inherit;
+}
+
+ .cap{
+  text-align: right;
+  font-size: 12px;
+}
+
+#garden ul{
+  width: 100%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+#garden ul li{
+  width: 25%;
+  display: inline-block;
+  margin: 0 4% 80px;
+}
+
+#garden ul li h5{
+  font-weight: normal;
+  font-size: 18px;
+  color: #70452e;
+  margin-top: 20px;
+}
+
+#garden ul li p{
+  font-size: 16px;
+  margin-top: 5px;
+  line-height: 1.8;
+}
+
+  @media screen and (max-width: 1104px) {
+
+#garden{
+  width: 100%;
+  margin: 60px auto 0;
+}
+
+#garden .garden_title{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#garden .garden_title h4{
+  font-size: 1.0em;
+  line-height: 1.8em;
+  padding-left: 20px;
+  border-left: 1px solid #70452e;
+  z-index: 1000;
+  height: 120px;
+  margin-left: 5%;
+}
+
+#garden .garden_title img{
+  margin-top: 80px;
+}
+
+.cap{
+  font-size: 6px;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+#garden ul{
+  width: 90%;
+  margin: 40px auto; 
+}
+
+
+#garden ul li{
+  width: 45%;
+  display: inline-block;
+  margin: 0 0 40px;
+  vertical-align: top;
+}
+
+#garden ul li:nth-child(odd){
+  margin-right:5%;
+  }
+
+#garden ul li h5{
+  font-size: 0.8em;
+  margin-top: 15px;
+}
+
+#garden ul li p{
+  font-size: 0.7em;
+  margin-top: 4px;
+  line-height: 1.8;
+}
+
+}
+
+
+/* =========================================================
+  #view
+========================================================== */
+
+#view{
+  width: 100%;
+  margin: 40px auto 0;
+}
+
+#view h3 {
+  margin-bottom: 50px;
+}
+
+#view .viewimg{
+  width: 100%;
+  height: 460px;
+  background: url(../images/member/column_landplan/view_pc.jpg);
+  background-position: center center;
+}
+
+.view_illust{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding-top: 80px;
+}
+
+.view_text{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+
+  @media screen and (max-width: 1104px) {
+#view h3 {
+  margin-bottom: 30px;
+}
+
+#view .viewimg{
+  height: 200px;
+  background-size: cover;
+}
+
+.view_illust{
+  width: 90%;
+  margin: 0 auto 40px;
+  padding-top: 50px;
+}
+.view_text{
+  font-size: 0.7em;
+  margin-top: 15px;
+}
+
+}

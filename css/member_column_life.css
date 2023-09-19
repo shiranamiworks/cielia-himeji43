@@ -1,0 +1,766 @@
+/* brake point */
+/* font color */
+/* =========================================================
+	hack IE
+========================================================== */
+/* =========================================================
+	.alignfull  & .alignwide
+========================================================== */
+.alignfull {
+  width: 100vw !important;
+  margin-left: calc( 50% - 50vw );
+  margin-right: calc( 50% - 50vw );
+  max-width: none; }
+
+@media screen and (max-width: 1103px) {
+  .alignfull_sp {
+    padding: 0;
+    width: 100vw !important;
+    margin-left: calc( 50% - 50vw );
+    margin-right: calc( 50% - 50vw );
+    max-width: none; } }
+
+@media screen and (min-width: 1104px) {
+  .alignwide {
+    width: 1104px !important;
+    margin-left: calc( 50% - 1104px / 2 ) !important; } }
+
+/* =========================================================
+	.cap
+========================================================== */
+span.cap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 1%;
+  color: #bfbfbf;
+  font-size: 1.1rem;
+  background: rgba(30, 30, 30, 0.7); }
+  @media screen and (min-width: 1104px) {
+    span.cap {
+      font-size: 1.4rem;
+      line-height: 1.6rem; } }
+
+.min-note {
+  font-size: 1.2rem; }
+  @media screen and (min-width: 1104px) {
+    .min-note {
+      font-size: 0.8rem; } }
+
+span.minuteWalkTimes {
+  font-size: 0.8em; }
+
+/* =========================================================
+	.sectionTitle
+========================================================== */
+.sectionTitle {
+  position: relative; }
+  .sectionTitle .sectionTitle__sub {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1f1f1f; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle .sectionTitle__sub {
+        font-size: 2rem;
+        margin-bottom: 2em; } }
+  .sectionTitle h3 {
+    color: #142e77;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    text-align: center; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle h3 {
+        font-size: 3.8rem;
+        font-weight: 600;
+        line-height: 1.7em;
+        letter-spacing: 0.1em; } }
+
+.heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: #1f1f1f;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: -85px; }
+  @media screen and (min-width: 1104px) {
+    .heightLine::before {
+      height: 95px;
+      top: -115px; } }
+
+h4 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: #70452e;
+  text-align: center; }
+  @media screen and (min-width: 1104px) {
+    h4 {
+      margin-bottom: 2em;
+      font-size: 2.8rem;
+      line-height: 1.8em;
+      font-weight: 600; } }
+
+.sideAlphabet {
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .sideAlphabet::before {
+    content: '';
+    width: 5%;
+    max-width: 15px;
+    min-width: 10px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle; }
+
+/* =========================================================
+	.gotoBT
+========================================================== */
+.gotoBT a {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  background: #142e77;
+  color: #FFF;
+  line-height: 1;
+  text-align: center;
+  transition: .3s; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a {
+      max-width: 485px;
+      padding: 22px 0;
+      font-size: 1.8rem; } }
+
+.gotoBT a:hover {
+  opacity: .7; }
+
+.gotoBT a::after {
+  right: 12px;
+  width: 9px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  background: url(../images/common/arw_btn.png) no-repeat;
+  background-size: 100% auto;
+  transition: .3s; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a::after {
+      right: 20px; } }
+
+.gotoBT a:hover::after {
+  right: 8px; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a:hover::after {
+      right: 10px; } }
+
+.gotoBT.white a {
+  background: white;
+  color: #191917; }
+
+.gotoBT.white a::after {
+  background: url(../images/common/arw_btn_black.png) no-repeat;
+  background-size: 100% auto; }
+
+.gotoBT_comingsoon span {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 1px solid white;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  opacity: .8; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT_comingsoon span {
+      max-width: 485px;
+      padding: 22px 0;
+      font-size: 1.8rem; } }
+
+.gotoBT_comingsoon.op04 span {
+  opacity: .4; }
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+  background: url(../images/member/column_life/bg_ttl.png) no-repeat;
+  background-size: cover;
+  background-position: 40% bottom; }
+  @media screen and (min-width: 1104px) {
+    #Content .page-ttlBg {
+      background-position: center bottom; } }
+
+@media screen and (min-width: 767px) {
+  #life {
+    font-size: 1.6rem;
+    line-height: 1.8em; } }
+@media screen and (min-width: 1104px) {
+  #life {
+    font-size: 1.8rem;
+    line-height: 1.8em; } }
+#life .sectionTitle {
+  position: relative;
+  margin-bottom: 4em; }
+  @media screen and (min-width: 767px) {
+    #life .sectionTitle {
+      margin-bottom: 96px; } }
+  #life .sectionTitle h3 {
+    padding-top: 65px;
+    color: #142e77;
+    font-size: 2.2rem;
+    line-height: 1.5em;
+    text-align: center; }
+    @media screen and (min-width: 767px) {
+      #life .sectionTitle h3 {
+        padding-top: 95px;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.7em; } }
+#life .heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: #1f1f1f;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: 0px; }
+  @media screen and (min-width: 767px) {
+    #life .heightLine::before {
+      height: 95px;
+      top: 0px; } }
+#life .shopNote {
+  padding-top: 1em;
+  font-size: 1.3rem;
+  line-height: 1.5em; }
+  @media screen and (min-width: 767px) {
+    #life .shopNote {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 1104px) {
+    #life .shopNote {
+      font-size: 1.6rem; } }
+#life .infoNote {
+  padding-top: 1em;
+  font-size: 1.3rem;
+  line-height: 1.5em; }
+  @media screen and (min-width: 767px) {
+    #life .infoNote {
+      font-size: 1.4rem; } }
+
+.sectionRestaurant {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: url("../images/member/column_life/restaurant_bg01.png") repeat; }
+  @media screen and (min-width: 1104px) {
+    .sectionRestaurant {
+      padding-top: 96px;
+      padding-bottom: 64px; } }
+  .sectionRestaurant .sectionWrap {
+    position: relative;
+    background: white;
+    margin: 0 20px;
+    padding-bottom: 5px; }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant .sectionWrap {
+        padding: 0 64px 10px 64px; } }
+    @media screen and (min-width: 1104px) {
+      .sectionRestaurant .sectionWrap {
+        margin: 0 auto;
+        width: 1040px; } }
+  .sectionRestaurant__restaurantName {
+    position: relative;
+    color: #94822d;
+    margin-bottom: 3em; }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant__restaurantName {
+        margin-bottom: 64px; } }
+    .sectionRestaurant__restaurantName__sub {
+      position: relative;
+      margin-bottom: 1em;
+      line-height: 1.4em;
+      text-align: center; }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurantName__sub {
+          margin: auto auto 20px auto;
+          width: 630px;
+          font-size: 2.2rem; } }
+      .sectionRestaurant__restaurantName__sub::before, .sectionRestaurant__restaurantName__sub::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -30%);
+        transform: translate(0, -30%);
+        width: 20px;
+        height: 50px;
+        vertical-align: middle; }
+      .sectionRestaurant__restaurantName__sub::before {
+        left: 0;
+        background-image: url("../images/member/column_life/restaurant_bg02_left.png");
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .sectionRestaurant__restaurantName__sub::after {
+        right: 0;
+        background-image: url("../images/member/column_life/restaurant_bg02_right.png");
+        background-size: contain;
+        background-repeat: no-repeat; }
+    .sectionRestaurant__restaurantName__title {
+      color: #94822d;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.4em; }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurantName__title {
+          font-size: 2.5rem; } }
+    .sectionRestaurant__restaurantName::after {
+      content: "";
+      display: block;
+      flex-grow: 1;
+      background: #94822d;
+      width: 120px;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      bottom: -18px;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurantName::after {
+          bottom: -32px; } }
+  .sectionRestaurant__restaurant01 {
+    position: relative;
+    margin-bottom: 4em; }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant__restaurant01 {
+        margin-bottom: 96px; } }
+    .sectionRestaurant__restaurant01__container__block02 {
+      margin-top: 1em; }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant01__container__block02 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; } }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant01__container__block02_photo {
+          width: 60%;
+          max-width: 578px; } }
+      .sectionRestaurant__restaurant01__container__block02_read {
+        margin-top: 1em; }
+        @media screen and (min-width: 767px) {
+          .sectionRestaurant__restaurant01__container__block02_read {
+            margin-top: 0 !important;
+            width: 37%;
+            max-width: 330px; } }
+    .sectionRestaurant__restaurant01__container__block03 {
+      margin-top: 1em; }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant01__container__block03 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end; } }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant01__container__block03_photo {
+          width: 25%;
+          max-width: 294px; } }
+      .sectionRestaurant__restaurant01__container__block03_read {
+        margin-top: 1em; }
+        @media screen and (min-width: 767px) {
+          .sectionRestaurant__restaurant01__container__block03_read {
+            margin-top: 0 !important;
+            width: 73%;
+            max-width: 640px; } }
+  .sectionRestaurant__restaurant02 {
+    position: relative;
+    margin-bottom: 4em; }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant__restaurant02 {
+        margin-bottom: 96px; } }
+    .sectionRestaurant__restaurant02__container__block02 {
+      margin-top: 1em; }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant02__container__block02 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; } }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant02__container__block02_photo01 {
+          width: 65.5%;
+          max-width: 630px; } }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant02__container__block02_photo02 {
+          width: 34.5%;
+          max-width: 315px; } }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant__restaurant02__container__block03 {
+        margin-top: 1em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end; } }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant__restaurant02__container__block03_photo {
+        margin-right: 25px;
+        width: 53%;
+        max-width: 495px; } }
+  .sectionRestaurant__restaurant03 {
+    position: relative;
+    margin-bottom: 4em; }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant__restaurant03 {
+        margin-bottom: 96px; } }
+    .sectionRestaurant__restaurant03__container__block01 {
+      margin-top: 4em; }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant03__container__block01 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; } }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant03__container__block01_photo {
+          width: 48%;
+          max-width: 445px; } }
+      .sectionRestaurant__restaurant03__container__block01_read {
+        margin-top: 1em; }
+        @media screen and (min-width: 767px) {
+          .sectionRestaurant__restaurant03__container__block01_read {
+            margin-top: 0 !important;
+            width: 48%;
+            max-width: 430px; } }
+  .sectionRestaurant__restaurant04 {
+    position: relative;
+    margin-bottom: 4em; }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant__restaurant04 {
+        margin-bottom: 96px; } }
+    .sectionRestaurant__restaurant04__container__block01 {
+      margin-top: 4em; }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant04__container__block01 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; } }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant04__container__block01_photo {
+          width: 40%;
+          max-width: 394px; } }
+      .sectionRestaurant__restaurant04__container__block01_read {
+        margin-top: 1em; }
+        @media screen and (min-width: 767px) {
+          .sectionRestaurant__restaurant04__container__block01_read {
+            margin-top: 0 !important;
+            width: 57%; } }
+  .sectionRestaurant__restaurant05 {
+    position: relative;
+    margin-bottom: 4em; }
+    @media screen and (min-width: 767px) {
+      .sectionRestaurant__restaurant05 {
+        margin-bottom: 96px; } }
+    .sectionRestaurant__restaurant05__container__block02 {
+      margin-top: 1em; }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant05__container__block02 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; } }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant05__container__block02_photo01 {
+          width: 65.5%;
+          max-width: 630px; } }
+      @media screen and (min-width: 767px) {
+        .sectionRestaurant__restaurant05__container__block02_photo02 {
+          width: 34.5%;
+          max-width: 315px; } }
+    .sectionRestaurant__restaurant05__container__block03 {
+      margin-top: 1em; }
+
+.sectionHospital .sectionWrap {
+  padding-bottom: 4em; }
+  @media screen and (min-width: 767px) {
+    .sectionHospital .sectionWrap {
+      padding: 0 20px; } }
+.sectionHospital__subject {
+  margin-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #959595; }
+  .sectionHospital__subject_title {
+    font-weight: bold;
+    color: #142e77; }
+  .sectionHospital__subject_item {
+    font-size: 1.3rem;
+    line-height: 1.5em; }
+    @media screen and (min-width: 767px) {
+      .sectionHospital__subject_item {
+        font-size: 1.4rem; } }
+.sectionHospital__picup {
+  margin-bottom: 4em; }
+  .sectionHospital__picup__title {
+    color: #142e77; }
+    .sectionHospital__picup__title_sub {
+      font-weight: 500; }
+    .sectionHospital__picup__title_tit {
+      text-align: left;
+      color: #142e77; }
+  .sectionHospital__picup__block01 P + P {
+    margin-top: 1em; }
+  .sectionHospital__picup__block02 {
+    margin-top: 1em; }
+    @media screen and (min-width: 767px) {
+      .sectionHospital__picup__block02 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; } }
+    @media screen and (min-width: 767px) {
+      .sectionHospital__picup__block02_photo {
+        width: 65%;
+        max-width: 718px; } }
+    .sectionHospital__picup__block02_read {
+      margin-top: 1em; }
+      @media screen and (min-width: 767px) {
+        .sectionHospital__picup__block02_read {
+          margin-top: 0;
+          width: 33%;
+          max-width: 426px; } }
+@media screen and (min-width: 767px) {
+  .sectionHospital__listWrap {
+    margin-top: 96px;
+    margin-bottom: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+.sectionHospital__list {
+  margin-top: 2em; }
+  @media screen and (min-width: 767px) {
+    .sectionHospital__list {
+      margin-top: 0;
+      width: 31.5%;
+      font-size: 1.6rem;
+      line-height: 1.5em; }
+      .sectionHospital__list:first-child {
+        margin-top: 0; } }
+  .sectionHospital__list__title {
+    padding: 0.5em 0;
+    font-size: 1.5rem;
+    background: #142e77;
+    color: white; }
+    @media screen and (min-width: 767px) {
+      .sectionHospital__list__title {
+        margin-bottom: 1em;
+        padding: 0.2em 0;
+        font-size: 1.5rem; } }
+    @media screen and (min-width: 1104px) {
+      .sectionHospital__list__title {
+        font-size: 1.8rem; } }
+  .sectionHospital__list__photo {
+    margin-top: 1em; }
+
+.sectionEducation {
+  background: #f8f6ed;
+  padding-bottom: 4em; }
+  @media screen and (min-width: 767px) {
+    .sectionEducation .sectionWrap {
+      padding: 0 20px 32px 20px; } }
+  .sectionEducation__subject {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #959595; }
+    .sectionEducation__subject_title {
+      font-weight: bold;
+      color: #142e77; }
+    .sectionEducation__subject_item {
+      font-size: 1.3rem;
+      line-height: 1.5em; }
+      @media screen and (min-width: 767px) {
+        .sectionEducation__subject_item {
+          font-size: 1.4rem; } }
+  @media screen and (min-width: 767px) {
+    .sectionEducation__listWrap {
+      margin-top: 96px;
+      margin-bottom: 64px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 767px) {
+    .sectionEducation__listWrap:last-child {
+      margin-top: 32px; } }
+  .sectionEducation__list {
+    margin-top: 2em; }
+    @media screen and (min-width: 767px) {
+      .sectionEducation__list {
+        margin-top: 0;
+        width: 31.5%;
+        font-size: 1.6rem;
+        line-height: 1.5em; } }
+    .sectionEducation__list__title {
+      padding: 0.5em 0;
+      font-size: 1.5rem;
+      background: #94822d;
+      color: white; }
+      @media screen and (min-width: 767px) {
+        .sectionEducation__list__title {
+          margin-bottom: 1em;
+          padding: 0.2em 0;
+          font-size: 1.5rem; } }
+      @media screen and (min-width: 1104px) {
+        .sectionEducation__list__title {
+          font-size: 1.8rem; } }
+    .sectionEducation__list__read_subtitle {
+      margin-bottom: 1em;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #94822d; }
+    .sectionEducation__list__photo {
+      margin-top: 1em; }
+  .sectionEducation__Title02 {
+    margin-top: 4em; }
+    .sectionEducation__Title02 h3 {
+      color: #94822d;
+      font-size: 2rem; }
+      @media screen and (min-width: 767px) {
+        .sectionEducation__Title02 h3 {
+          font-size: 2.8rem; } }
+
+.sectionLife {
+  margin-bottom: 4em; }
+  @media screen and (min-width: 767px) {
+    .sectionLife {
+      margin-bottom: 96px; } }
+  @media screen and (min-width: 767px) {
+    .sectionLife .sectionWrap {
+      padding: 0 20px; } }
+  .sectionLife__subject {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #959595; }
+    .sectionLife__subject_title {
+      font-weight: bold;
+      color: #6a4631; }
+    .sectionLife__subject_item {
+      font-size: 1.3rem;
+      line-height: 1.5em; }
+      @media screen and (min-width: 767px) {
+        .sectionLife__subject_item {
+          font-size: 1.4rem; } }
+  @media screen and (min-width: 767px) {
+    .sectionLife__listWrap {
+      margin-top: 96px;
+      margin-bottom: 64px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 767px) {
+    .sectionLife__listWrap:last-child {
+      margin-bottom: 32px; } }
+  .sectionLife__list {
+    margin-top: 2em; }
+    .sectionLife__list:first-child {
+      margin-top: 4em; }
+    @media screen and (min-width: 767px) {
+      .sectionLife__list {
+        margin-top: 0;
+        width: 31.5%;
+        font-size: 1.6rem;
+        line-height: 1.5em; }
+        .sectionLife__list:first-child {
+          margin-top: 0; } }
+    .sectionLife__list__title {
+      padding: 0.5em 0;
+      font-size: 1.5rem;
+      background: #6a4631;
+      color: white; }
+      @media screen and (min-width: 767px) {
+        .sectionLife__list__title {
+          margin-bottom: 1em;
+          padding: 0.2em 0;
+          font-size: 1.5rem; } }
+      @media screen and (min-width: 1104px) {
+        .sectionLife__list__title {
+          font-size: 1.8rem; } }
+    .sectionLife__list__read_subtitle {
+      margin-bottom: 1em;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #6a4631; }
+    .sectionLife__list__photo {
+      margin-top: 1em; }
+  .sectionLife__Title02 h3 {
+    color: #94822d;
+    font-size: 1.5rem; }
+    @media screen and (min-width: 767px) {
+      .sectionLife__Title02 h3 {
+        font-size: 2.8rem; } }
+
+.sectionMap {
+  margin-bottom: 3em; }
+  @media screen and (min-width: 767px) {
+    .sectionMap {
+      margin-bottom: 96px; } }
+  @media screen and (min-width: 767px) {
+    .sectionMap .sectionWrap {
+      padding: 0 20px; } }
+  @media screen and (min-width: 767px) {
+    .sectionMap__mapBlock {
+      margin: auto;
+      max-width: 1040px; } }

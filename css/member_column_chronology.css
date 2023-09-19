@@ -1,0 +1,380 @@
+@charset "UTF-8";
+/* brake point */
+/* font color */
+/* =========================================================
+	hack IE
+========================================================== */
+/* =========================================================
+	.alignfull  & .alignwide
+========================================================== */
+.alignfull {
+  width: 100vw !important;
+  margin-left: calc( 50% - 50vw );
+  margin-right: calc( 50% - 50vw );
+  max-width: none; }
+
+@media screen and (max-width: 1103px) {
+  .alignfull_sp {
+    padding: 0;
+    width: 100vw !important;
+    margin-left: calc( 50% - 50vw );
+    margin-right: calc( 50% - 50vw );
+    max-width: none; } }
+
+@media screen and (min-width: 1104px) {
+  .alignwide {
+    width: 1104px !important;
+    margin-left: calc( 50% - 1104px / 2 ) !important; } }
+
+/* =========================================================
+	.cap
+========================================================== */
+span.cap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 1%;
+  color: #bfbfbf;
+  font-size: 1.1rem;
+  background: rgba(30, 30, 30, 0.7); }
+  @media screen and (min-width: 1104px) {
+    span.cap {
+      font-size: 1.4rem;
+      line-height: 1.6rem; } }
+
+.min-note {
+  font-size: 1.2rem; }
+  @media screen and (min-width: 1104px) {
+    .min-note {
+      font-size: 0.8rem; } }
+
+span.minuteWalkTimes {
+  font-size: 0.8em; }
+
+/* =========================================================
+	.sectionTitle
+========================================================== */
+.sectionTitle {
+  position: relative; }
+  .sectionTitle .sectionTitle__sub {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1f1f1f; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle .sectionTitle__sub {
+        font-size: 2rem;
+        margin-bottom: 2em; } }
+  .sectionTitle h3 {
+    color: #142e77;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    text-align: center; }
+    @media screen and (min-width: 1104px) {
+      .sectionTitle h3 {
+        font-size: 3.8rem;
+        font-weight: 600;
+        line-height: 1.7em;
+        letter-spacing: 0.1em; } }
+
+.heightLine::before {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  background: #1f1f1f;
+  width: 1px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: -85px; }
+  @media screen and (min-width: 1104px) {
+    .heightLine::before {
+      height: 95px;
+      top: -115px; } }
+
+h4 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: #70452e;
+  text-align: center; }
+  @media screen and (min-width: 1104px) {
+    h4 {
+      margin-bottom: 2em;
+      font-size: 2.8rem;
+      line-height: 1.8em;
+      font-weight: 600; } }
+
+.sideAlphabet {
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .sideAlphabet::before {
+    content: '';
+    width: 5%;
+    max-width: 15px;
+    min-width: 10px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle; }
+
+/* =========================================================
+	.gotoBT
+========================================================== */
+.gotoBT a {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  background: #142e77;
+  color: #FFF;
+  line-height: 1;
+  text-align: center;
+  transition: .3s; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a {
+      max-width: 485px;
+      padding: 22px 0;
+      font-size: 1.8rem; } }
+
+.gotoBT a:hover {
+  opacity: .7; }
+
+.gotoBT a::after {
+  right: 12px;
+  width: 9px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  background: url(../images/common/arw_btn.png) no-repeat;
+  background-size: 100% auto;
+  transition: .3s; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a::after {
+      right: 20px; } }
+
+.gotoBT a:hover::after {
+  right: 8px; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT a:hover::after {
+      right: 10px; } }
+
+.gotoBT.white a {
+  background: white;
+  color: #191917; }
+
+.gotoBT.white a::after {
+  background: url(../images/common/arw_btn_black.png) no-repeat;
+  background-size: 100% auto; }
+
+.gotoBT_comingsoon span {
+  max-width: initial;
+  padding: 18px 0;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 1px solid white;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  opacity: .8; }
+  @media screen and (min-width: 1104px) {
+    .gotoBT_comingsoon span {
+      max-width: 485px;
+      padding: 22px 0;
+      font-size: 1.8rem; } }
+
+.gotoBT_comingsoon.op04 span {
+  opacity: .4; }
+
+/* =========================================================
+	.page-ttl
+========================================================== */
+#Content .page-ttlBg {
+  margin-bottom: 2em;
+  background: url(../images/member/column_chronology/bg_ttl.png) no-repeat;
+  background-size: cover;
+  background-position: 40% bottom; }
+  @media screen and (min-width: 1104px) {
+    #Content .page-ttlBg {
+      margin-bottom: 7em;
+      background-position: center bottom; } }
+
+@media screen and (min-width: 1104px) {
+  #chronology .sectionChronology .sectionWrap {
+    width: 1040px; } }
+
+#chronology .sectionChronology h3 {
+  margin-bottom: 2em;
+  text-align: center;
+  color: #142e77;
+  font-size: 2rem;
+  line-height: 1.5em; }
+  @media screen and (min-width: 1104px) {
+    #chronology .sectionChronology h3 {
+      margin-bottom: 4em;
+      font-size: 2.8rem;
+      line-height: 2em; } }
+@media screen and (min-width: 1104px) {
+  #chronology .sectionChronology .flexBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    #chronology .sectionChronology .flexBox .row2 {
+      width: 500px; } }
+@media screen and (min-width: 1104px) {
+  #chronology .sectionChronology .mgL {
+    margin-left: -80px; } }
+@media screen and (min-width: 1104px) {
+  #chronology .sectionChronology .mgR {
+    margin-right: -80px; } }
+#chronology .sectionChronology .chronologyBlock {
+  margin-bottom: 4em; }
+  #chronology .sectionChronology .chronologyBlock h4 {
+    margin-bottom: 0.1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    color: #70452e;
+    font-size: 4rem;
+    font-weight: normal;
+    vertical-align: bottom; }
+    @media screen and (min-width: 1104px) {
+      #chronology .sectionChronology .chronologyBlock h4 {
+        font-size: 4.1rem; } }
+    #chronology .sectionChronology .chronologyBlock h4::before {
+      margin-right: 1rem;
+      border-top: 1px solid #70452e;
+      content: "";
+      width: 3rem; }
+    #chronology .sectionChronology .chronologyBlock h4 .year {
+      margin-right: 0.3em;
+      margin-left: 0.3em;
+      font-size: 1.5rem; }
+    #chronology .sectionChronology .chronologyBlock h4 .japaneseCalendar {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #191917; }
+  #chronology .sectionChronology .chronologyBlock .title {
+    font-size: 2rem;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: #70452e; }
+    @media screen and (min-width: 1104px) {
+      #chronology .sectionChronology .chronologyBlock .title {
+        font-size: 2.4rem;
+        line-height: 2em; } }
+  #chronology .sectionChronology .chronologyBlock .read {
+    margin-top: 1em; }
+  @media screen and (min-width: 1104px) {
+    #chronology .sectionChronology .chronologyBlock.flexBox {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      #chronology .sectionChronology .chronologyBlock.flexBox h4 {
+        line-height: 1em;
+        width: 295px; } }
+#chronology .sectionChronology .photoBlock {
+  margin-bottom: 4em; }
+  @media screen and (min-width: 1104px) {
+    #chronology .sectionChronology .photoBlock .photoBlock__photo01 {
+      width: 600px; }
+    #chronology .sectionChronology .photoBlock .photoBlock__photo02 {
+      margin-right: 60px;
+      width: 426px; }
+    #chronology .sectionChronology .photoBlock .photoBlock__photo03 {
+      margin-left: 60px;
+      width: 418px; }
+    #chronology .sectionChronology .photoBlock .photoBlock__photo04 {
+      margin-top: -2.5em; }
+    #chronology .sectionChronology .photoBlock .photoBlock__photo05 {
+      margin-right: 60px;
+      width: 426px; }
+    #chronology .sectionChronology .photoBlock .photoBlock__photo06 {
+      margin-top: -2.5em; }
+    #chronology .sectionChronology .photoBlock .photoBlock__photo07 {
+      margin-top: -2.5em; } }
+#chronology .sectionChronology hr {
+  padding-top: 5em;
+  height: 0;
+  border: none; }
+  @media screen and (min-width: 1104px) {
+    #chronology .sectionChronology hr {
+      padding-top: 9em; } }
+
+#chronology .sectionFuture {
+  background: url(../images/member/column_chronology/future_bg01.png) no-repeat;
+  background-size: cover;
+  background-position: -630px top;
+  color: white;
+  text-shadow: 1px 1px 4px #191917, -1px 1px 4px #191917, 1px -1px 4px #191917, -1px -1px 4px #191917; }
+  @media screen and (min-width: 1104px) {
+    #chronology .sectionFuture {
+      background-position: left top; } }
+  #chronology .sectionFuture .sectionWrap {
+    padding-bottom: 8em; }
+  #chronology .sectionFuture .titleCopy {
+    padding-top: 130px;
+    width: 30%;
+    max-width: 106px;
+    /*background: url(../images/member/column_chronology/future_bg02.png) no-repeat;*/
+    background-size: 1px 120px;
+    background-position: left top; }
+    #chronology .sectionFuture .titleCopy img {
+      margin: 1em 0 1em -10px; }
+  #chronology .sectionFuture h3 {
+    margin-bottom: 4em;
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    line-height: 1.5em;
+    font-weight: 500; }
+    @media screen and (min-width: 1104px) {
+      #chronology .sectionFuture h3 {
+        margin-bottom: 2em;
+        font-size: 3.8rem;
+        line-height: 1.7em; } }
+    #chronology .sectionFuture h3::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2em;
+      /*線の上下位置*/
+      display: inline-block;
+      width: 1.5em;
+      height: 2px;
+      background-color: white; }
+      @media screen and (min-width: 1104px) {
+        #chronology .sectionFuture h3::before {
+          bottom: -1em;
+          /*線の上下位置*/
+          width: 1em; } }
+  #chronology .sectionFuture h4 {
+    margin-bottom: 1.5em;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-align: left; }
+    @media screen and (min-width: 1104px) {
+      #chronology .sectionFuture h4 {
+        margin-bottom: 1em;
+        font-size: 2.6rem; } }
+  @media screen and (min-width: 1104px) {
+    #chronology .sectionFuture .read {
+      width: 624px;
+      line-height: 2em; } }

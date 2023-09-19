@@ -1,0 +1,82 @@
+.cocoen{
+
+	box-sizing:border-box;
+	cursor:pointer;
+	line-height:0;
+	margin:0;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+	
+	}
+
+	.cocoen *{
+		box-sizing:inherit
+	}
+
+	.cocoen ::after,.cocoen ::before{
+		box-sizing:inherit
+	}
+
+	.cocoen img,.cocoen picture>img{
+		max-width:none
+	}
+
+	.cocoen>img,.cocoen>picture>img{
+		display:block;
+	width:100%
+}
+
+	.cocoen>div:first-child,picture .cocoen>div{
+		height:100%;
+	left:0;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	width:50%
+}
+
+	.cocoen-drag{
+		background:#fff;
+	bottom:0;
+	cursor:ew-resize;
+	left:50%;
+	margin-left:-1px;
+	position:absolute;
+	top:0;
+	width:2px
+}
+
+	.cocoen-drag::before{
+	/*border:15px solid #fff;*/
+	border-radius: 50px;
+	content: url(../images/special/special_view/yaji.png);
+	height:40px;
+	left:50%;
+	margin-left:-19px;
+	margin-top:-11px;
+	position:absolute;
+	top:50%;
+
+}
+
+
+
+.nextPage{
+	margin: 60px auto;
+	}
+
+
+
+@media screen and (min-width:768px) {
+
+	.nextPage{
+		margin-top: 100px;
+	}
+
+}
+
