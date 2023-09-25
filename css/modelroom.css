@@ -304,9 +304,10 @@ figure {
   text-align: center;
   padding-bottom: 30px;
   color: #142e77;
-  font-size: 2.5rem;
+  font-size: 3.8rem;
   font-weight: 600;
   line-height: 1.8;
+  letter-spacing: 0.1em;
 }
 
   @media screen and (max-width: 1104px) {
