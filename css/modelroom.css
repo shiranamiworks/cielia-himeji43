@@ -288,6 +288,22 @@ figure {
   margin: 0 auto;
   width: 87px;
 }
+.main_img {
+    position: relative;
+}
+.main_img .cap{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px 10px;
+    color: #fff;
+    font-size: .45em;
+}
+.main_img .mv_text{
+    text-align: center;
+    padding-bottom: 30px;
+}
 
   @media screen and (max-width: 1104px) {
 
