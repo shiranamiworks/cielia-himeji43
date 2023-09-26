@@ -216,12 +216,13 @@ figure {
         font-size: 1.4rem; } }
 
 .sectionIntro {
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+}
   .sectionIntro .sectionTitle {
     margin: 85px auto 30px auto; }
     @media screen and (min-width: 1104px) {
       .sectionIntro .sectionTitle {
-        margin: 115px auto 4em auto; } }
+        margin: 115px auto 0 auto; } }
 
 
 
@@ -321,8 +322,9 @@ figure {
    width: 50px!important;
   }
   .main_img .mv_text{
-   font-size: 2rem;
-}
+   font-size: 2.5rem;
+   line-height: 1.5;
+  }
 }
 
 .cont2{
