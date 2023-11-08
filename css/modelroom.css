@@ -474,17 +474,17 @@ figure {
 }
 
 .swiper-button-prev{
-    color: #fff!important;
+    color: #000!important;
     opacity: 0.6!important;
 }
 
 .swiper-button-next{
-    color: #fff!important;
+    color: #000!important;
     opacity: 0.6!important;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
-background-color: #fff;
+background-color: #000;
 }
 
 
