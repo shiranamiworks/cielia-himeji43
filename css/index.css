@@ -1606,16 +1606,18 @@ campaignバナー
 
 
 
-
-  .bn--area{
-  	max-width: 1190px;
-  	margin: 60px auto;
-  }
   .bn--special{
   	width: 100%;
   }
   .bn--special img{
   	width: 100%;
+  }
+  .bn--area{
+  	max-width: 1190px;
+  	margin: 60px auto;
+  }
+  .bn--area .bn--Wrap{
+  	text-align: center;
   }
   .bn--area a{
     transition: .15s all;
