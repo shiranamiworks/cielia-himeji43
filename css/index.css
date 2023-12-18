@@ -304,14 +304,14 @@ h4 {
 .sectionMainVisual.visualFixed {
 /*  border-top: 1px solid #FFF;*/
   height: auto;
-  background: url("../images/index/mainvisual_photo10_sp.jpg") no-repeat;
+  background: url("../images/index/mainvisual_photo10.jpg") no-repeat;
   background-size: contain;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .sectionMainVisual.visualFixed {
-    background: url("../images/index/mainvisual_photo10.jpg") no-repeat;
+    background: url("../images/index/mainvisual_photo10_sp.jpg") no-repeat;
     background-size: contain;
-    margin-top: 130px;
+/*    margin-top: 130px;*/
   }
 }
 
@@ -346,12 +346,12 @@ h4 {
   height: auto;
 }
 .sectionMainVisual.bg03 {
-  background: url("../images/index/mainvisual_photo003_sp.jpg") no-repeat center bottom;
-  background-size: cover;
+  background: url("../images/index/mainvisual_photo12_sp.jpg") no-repeat center bottom;
+  background-size: contain;
 }
 @media screen and (min-width: 767px) {
   .sectionMainVisual.bg03 {
-    background: url("../images/index/mainvisual_photo003_pc.jpg") no-repeat center bottom;
+    background: url("../images/index/mainvisual_photo12.jpg") no-repeat center bottom;
     background-size: cover;
   }
 }
@@ -387,14 +387,24 @@ h4 {
   }
 }
 .sectionMainVisual.bg02 {
-  background: url("../images/index/mainvisual_photo002_sp.jpg") no-repeat center bottom;
-  background-size: cover;
+  background: url("../images/index/mainvisual_photo11.jpg") no-repeat center bottom;
+  background-size: contain;
 }
 @media screen and (min-width: 1104px) {
   .sectionMainVisual.bg02 {
-    background: url("../images/index/mainvisual_photo002_pc.jpg") no-repeat center bottom;
+    background: url("../images/index/mainvisual_photo11.jpg") no-repeat center bottom;
     background-size: cover;
   }
+}
+@media screen and (max-width: 767px) {
+.sectionMainVisual.bg01 {
+  background: url("../images/index/mainvisual_photo10_sp.jpg") no-repeat center bottom;
+  background-size: contain;
+}
+.sectionMainVisual.bg02 {
+  background: url("../images/index/mainvisual_photo11_sp.jpg") no-repeat center bottom;
+  background-size: contain;
+}
 }
 .sectionMainVisual.bg02 .sectionMainVisual__copy {
   margin: 0 auto;
@@ -415,18 +425,23 @@ h4 {
   }
 }
 
-.sectionMainVisual.bg04 {
-  background: url("../images/index/mainvisual_photo10_sp.jpg") no-repeat center bottom;
+.sectionMainVisual.bg03 {
+  background: url("../images/index/mainvisual_photo12.jpg") no-repeat center bottom;
   background-size: contain;
 }
 
 @media screen and (min-width: 1104px) {
-  .sectionMainVisual.bg04 {
-    background: url("../images/index/mainvisual_photo10.jpg") no-repeat center bottom;
+  .sectionMainVisual.bg03 {
+    background: url("../images/index/mainvisual_photo12.jpg") no-repeat center bottom;
     background-size: contain;
   }
 }
-
+@media screen and (max-width: 767px) {
+    .sectionMainVisual.bg03 {
+    background: url("../images/index/mainvisual_photo12_sp.jpg") no-repeat center bottom;
+        background-size: contain;
+    }
+}
 .sectionMainVisual.bg05 {
   background: url("../images/index/mainvisual_photo005_sp.jpg") no-repeat center bottom;
   background-size: cover;
@@ -440,15 +455,21 @@ h4 {
 }
 
 .sectionMainVisual.bg01 {
-  background: url("../images/index/mainvisual_photo001_sp.jpg") no-repeat center bottom;
-  background-size: cover;
+  background: url("../images/index/mainvisual_photo10.jpg") no-repeat center bottom;
+  background-size: contain;
 }
 
 @media screen and (min-width: 1104px) {
   .sectionMainVisual.bg01 {
-    background: url("../images/index/mainvisual_photo001_pc.jpg") no-repeat center bottom;
+    background: url("../images/index/mainvisual_photo10.jpg") no-repeat center bottom;
     background-size: cover;
   }
+}
+@media screen and (max-width: 767px) {
+    .sectionMainVisual.bg01 {
+    background: url("../images/index/mainvisual_photo10_sp.jpg") no-repeat center bottom;
+        background-size: contain;
+    }
 }
 
 .sectionMainVisual.bg06 {
@@ -1165,7 +1186,7 @@ h4 {
 /***************** MV内行動提起 *****************/
 .koudou_mv {
   position: absolute;
-  bottom: 0;
+/*  bottom: 0;*/
   right: 0;
   width: 100%;
   max-width: 791px;
@@ -1586,10 +1607,15 @@ campaignバナー
 
 
 
-
   .bn--area{
   	max-width: 1190px;
   	margin: 60px auto;
+  }
+  .bn--special{
+  	width: 100%;
+  }
+  .bn--special img{
+  	width: 100%;
   }
   .bn--area a{
     transition: .15s all;

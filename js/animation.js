@@ -25,7 +25,7 @@ $(function() {
     if(wW > 768) {
       $('.sectionMainVisual').css('height', wW*1634/3840 + 'px');
     }else {
-      $('.sectionMainVisual').css('height', wW*2448/1500 + 'px');
+      $('.sectionMainVisual').css('height', wW*817/750 + 'px');
     }
   }
   
