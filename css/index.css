@@ -350,9 +350,8 @@ h4 {
   background-size: contain;
 }
 @media screen and (min-width: 767px) {
-  .sectionMainVisual.bg03 {
-    background: url("../images/index/mainvisual_photo12.jpg") no-repeat center bottom;
-    background-size: cover;
+  .sectionMainVisual.bg01,.sectionMainVisual.bg02,.sectionMainVisual.bg03 {
+    margin-top: 130px;
   }
 }
 .sectionMainVisual.bg01 .sectionMainVisual__copy {
