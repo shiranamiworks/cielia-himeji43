@@ -164,7 +164,7 @@ $(function() {
 	}
 	$('#Mv .inner').css('height',mvh+'px');
 	$('.sectionMainVisual').css('height',mvh+'px');
-});*/
+});
 	
 
 /* スクロールでアニメーション */
