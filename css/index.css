@@ -350,7 +350,7 @@ h4 {
   background-size: contain;
 }
 @media screen and (min-width: 767px) {
-  .sectionMainVisual.bg01,.sectionMainVisual.bg02,.sectionMainVisual.bg03,.sectionMainVisual.bg04{
+  .sectionMainVisual.bg01,.sectionMainVisual.bg02,.sectionMainVisual.bg03,.sectionMainVisual.bg04,.sectionMainVisual.bg05{
     margin-top: 130px;
   }
 }
@@ -455,6 +455,23 @@ h4 {
 @media screen and (max-width: 767px) {
     .sectionMainVisual.bg04 {
     background: url("../images/index/mainvisual_photo13_sp.jpg") no-repeat center bottom;
+    background-size: contain;
+    }
+}
+.sectionMainVisual.bg05 {
+  background: url("../images/index/mainvisual_photo14.jpg") no-repeat center bottom;
+  background-size: contain;
+}
+
+@media screen and (min-width: 1104px) {
+  .sectionMainVisual.bg05 {
+    background: url("../images/index/mainvisual_photo14.jpg") no-repeat center bottom;
+    background-size:  contain;
+  }
+}
+@media screen and (max-width: 767px) {
+    .sectionMainVisual.bg05 {
+    background: url("../images/index/mainvisual_photo14_sp.jpg") no-repeat center bottom;
     background-size: contain;
     }
 }
