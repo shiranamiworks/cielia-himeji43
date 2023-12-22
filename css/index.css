@@ -344,6 +344,17 @@ h4 {
 ========================================================== */
 .sectionMainVisual {
   height: auto;
+  position: relative;
+}
+.sectionMainVisual .caption{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 10px;
+  color: #fff;
+  background-color: rgba(0,0,0,.7);
+  padding: 5px;
+  line-height: 1;
 }
 .sectionMainVisual.bg03 {
   background: url("../images/index/mainvisual_photo12_sp.jpg") no-repeat center bottom;
