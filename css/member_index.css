@@ -268,6 +268,7 @@ h4 {
     margin: 115px auto 4em auto;
   }
 }
+/*
 @media screen and (min-width: 1104px) {
   .sectionCont-list .cont-list {
     display: -webkit-box;
@@ -280,15 +281,18 @@ h4 {
     flex-wrap: wrap;
   }
 }
+*/
 .sectionCont-list .cont-list li {
   margin-bottom: 2em;
 }
+/*
 @media screen and (min-width: 1104px) {
   .sectionCont-list .cont-list li {
     margin: 0;
     width: 45%;
   }
 }
+*/
 .sectionCont-list .cont-list li .pic {
   text-align: center;
 }
