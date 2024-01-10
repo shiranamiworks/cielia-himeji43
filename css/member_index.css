@@ -522,6 +522,8 @@ h4 {
 ========================================================== */
 .sectionColumnContents .sectionWrap {
   padding-top: 0;
+  width: 94%;
+  margin: auto;
 }
 .sectionColumnContents .sectionTitle {
   margin: 85px auto 30px auto;
@@ -536,6 +538,7 @@ h4 {
 }
 @media screen and (min-width: 1104px) {
   .sectionColumnContents .cont-list {
+    display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -560,6 +563,7 @@ h4 {
   .sectionColumnContents .cont-list li {
     margin: 0;
     width: 32%;
+    display: inline-flex;
   }
 }
 
