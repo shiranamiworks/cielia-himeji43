@@ -54,6 +54,7 @@ br.sp {display: none;}
 #Plan .equipment .grid-list div p {margin-top: 0.5em;text-align: center;color: #4b332b;line-height: 1.5;font-size: 80%;}
 #Plan .plan {background: #f4edeb url("../images/special/lp/bg_04.jpg") no-repeat 50% 100%;background-size: cover;background-blend-mode: multiply;padding-top: 125px;padding-bottom: 3em;}
 #Plan .plan .container {max-width: 1000px;width: calc(100% - 3em);margin: 0 auto;}
+#Plan .plan .container picture img {width: 70%;margin: 0 auto;}
 #Plan .plan .container > div {margin-top: 2px;background-color: #fff;box-shadow: 0 0 1em rgb(208 213 208/40%);}
 #Plan .plan .spec .swiper-container-thumb {transform: translateY(-50%);}
 #Plan .plan .spec .swiper-container-thumb .swiper-slide p {box-shadow: 0 -0.2em 0 #a6918e inset;background-color: #af9d9b;cursor: pointer;}
