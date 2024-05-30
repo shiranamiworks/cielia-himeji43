@@ -304,12 +304,12 @@ h4 {
 .sectionMainVisual.visualFixed {
 /*  border-top: 1px solid #FFF;*/
   height: auto;
-  background: url("../images/index/mainvisual_photo10.jpg") no-repeat;
+  background: url("../images/index/mainvisual_sold.jpg") no-repeat;
   background-size: contain;
 }
 @media screen and (max-width: 768px) {
   .sectionMainVisual.visualFixed {
-    background: url("../images/index/mainvisual_photo10_sp.jpg") no-repeat;
+    background: url("../images/index/mainvisual_sold-sp.jpg") no-repeat;
     background-size: contain;
 /*    margin-top: 130px;*/
   }
@@ -362,7 +362,8 @@ h4 {
 }
 @media screen and (min-width: 767px) {
   .sectionMainVisual.bg01,.sectionMainVisual.bg02,.sectionMainVisual.bg03,.sectionMainVisual.bg04,.sectionMainVisual.bg05{
-    margin-top: 130px;
+/*    margin-top: 130px;*/
+/*      margin-top: 70px;*/
   }
 }
 .sectionMainVisual.bg01 .sectionMainVisual__copy {
@@ -408,7 +409,7 @@ h4 {
 }
 @media screen and (max-width: 767px) {
 .sectionMainVisual.bg01 {
-  background: url("../images/index/mainvisual_photo10_sp.jpg") no-repeat center bottom;
+  background: url("../images/index/mainvisual_sold-sp.jpg") no-repeat center bottom;
   background-size: contain;
 }
 .sectionMainVisual.bg02 {
@@ -487,19 +488,19 @@ h4 {
     }
 }
 .sectionMainVisual.bg01 {
-  background: url("../images/index/mainvisual_photo10.jpg") no-repeat center bottom;
+  background: url("../images/index/mainvisual_sold.jpg") no-repeat center bottom;
   background-size: contain;
 }
 
 @media screen and (min-width: 1104px) {
   .sectionMainVisual.bg01 {
-    background: url("../images/index/mainvisual_photo10.jpg") no-repeat center bottom;
+    background: url("../images/index/mainvisual_sold.jpg") no-repeat center bottom;
     background-size: cover;
   }
 }
 @media screen and (max-width: 767px) {
     .sectionMainVisual.bg01 {
-    background: url("../images/index/mainvisual_photo10_sp.jpg") no-repeat center bottom;
+    background: url("../images/index/mainvisual_sold-sp.jpg") no-repeat center bottom;
         background-size: contain;
     }
 }
@@ -637,6 +638,7 @@ h4 {
 	.sectionMainAction
 ========================================================== */
 .sectionMainAction {
+  display: none;
   padding: 1.8em 0;
   background: #f2f0ee;
 }
@@ -664,9 +666,17 @@ h4 {
 }
 
 /* =========================================================
+	.section salon
+========================================================== */
+.section.salon {
+  display: none;
+}
+
+/* =========================================================
 	.sectionLocationValue
 ========================================================== */
 .sectionLocationValue {
+  display: none;
   padding: 1.8em 0;
   background: white;
 }
@@ -765,6 +775,7 @@ h4 {
 	.goPageBlock
 ========================================================== */
 .goPageBlock {
+  display: none;
   color: white;
   text-align: center;
 }
@@ -1414,6 +1425,7 @@ campaignバナー
 /*   #galleryCnt
 --------------------------------------------------*/
 .galleryBox{
+  display: none;
   margin-bottom: 75px;
   margin-top: 75px;
 }
@@ -1640,11 +1652,13 @@ campaignバナー
 
   .bn--special{
   	width: 100%;
+    display: none;
   }
   .bn--special img{
   	width: 100%;
   }
   .bn--area{
+    display: none;
   	max-width: 1190px;
   	margin: 60px auto;
   }
@@ -1664,3 +1678,128 @@ campaignバナー
       margin: 40px auto;
     }
   }
+
+/* =========================================================
+  #sold-out
+========================================================== */
+.crm--ownersLogin{
+    padding:40px 0;
+    background: #efefef;
+}
+.crm--ownersLogin h4{
+    text-align: center;
+    margin-bottom: auto;
+    padding-bottom: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #181878;
+}
+.crm--ownersLogin h4 .eTtl{
+    display: block;
+    padding-top: 5px;
+    letter-spacing: 7px;
+    text-align: center;
+    font-size: 14px;
+    opacity: .7;
+}
+.crm--ownersLogin a{
+    display: block;
+    max-width: 420px;
+    margin: 0 auto 20px;
+    padding: 15px 0;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background: #181878;
+    text-align: center;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+    transition: 0.4s;
+}
+.crm--ownersLogin a:hover{
+    opacity: 0.7;
+}
+.crm--ownersLogin .desc{
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .crm--ownersLogin{
+        padding:5% 0;
+    }
+    .crm--ownersLogin h4{
+        padding-bottom: 3%;
+        font-size: 22px;
+    }
+    .crm--ownersLogin h4 .eTtl{
+        font-size: 12px;
+    }
+    .crm--ownersLogin a{
+        width: 90%;
+        margin: 0 auto 2%;
+        padding: 15px 0;
+        font-size: 16px;
+        letter-spacing: 2px;
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+    }
+    .crm--ownersLogin a:hover{
+        opacity: 0.7;
+    }
+    .crm--ownersLogin .desc{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.soldMessae{
+	text-align: center;
+	padding: 60px 0;
+    background-color: #ffffff;
+}
+.soldMessae .intro{
+    font-size: 22px;
+}
+.soldMessae p{
+    margin-top:20px;
+    font-size: 16px;
+    line-height: 2.0;
+    padding: 0 10px;
+}
+.soldMessae .sp{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .sp{
+        display: block!important;
+    }
+    .soldMessae{
+        padding: 10% 0 6%;
+    }
+    .soldMessae .intro{
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 4%;
+    }
+    .soldMessae p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+.crm--bnrBukken {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.crm--bnrBukken li {
+    margin-bottom: 30px;
+}
+

@@ -17,6 +17,7 @@
 }
 
 .crm--infoArea{
+  display: none;
   padding:60px 0;
   /*PJごとに背景色、イメージをご指定ください*/
 /*
